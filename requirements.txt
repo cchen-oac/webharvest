@@ -10,4 +10,4 @@ RegEx
 matplotlib
 urllib3
 openpyxl
-io
+
