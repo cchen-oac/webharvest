@@ -1,0 +1,4 @@
+dict = {'names': names, 'hrefs': hrefs}
+df = pd.DataFrame(dict)     
+# saving the dataframe
+df.to_csv('df.csv')  

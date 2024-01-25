@@ -24,6 +24,7 @@ from zipfile import ZipFile
 import requests
 from io import BytesIO
 import re
+import xlrd
 
 ##Defining functions
 #Check that the website is allowed for acces
@@ -83,20 +84,35 @@ def group_files(df):
     for index, row in df.iterrows():
             matches = row['hrefs'].rsplit('.', 1)[-1] #Extact file suffix to get file types, use regex backward
             file_extension.append(matches)
-    file_extension = list(pd.Series(file_extension).drop_duplicates())
+    file_extension = pd.DataFrame(file_extension, columns=['Name']).drop_duplicates()
     return(file_extension)
 
 #Download the selected file
 @st.cache_data
-def get_data(selected_rows):
+def get_data(selected_rows, tab_name):
     # Save the dataset as a dictionary
     downloaded_data = {}
     for Name in selected_rows['Name']:
         file_url = selected_rows.loc[selected_rows['Name'] == Name, 'hrefs'].values[0]
-        downloaded_data[Name] = pd.read_csv(file_url, low_memory=False)
+        extension = file_url.rsplit('.', 1)[-1]
+        
+        #Adjust method when opening different file type
+        if extension == 'csv':
+            downloaded_data[Name] = pd.read_csv(file_url, low_memory=False)
+        elif extension == 'xlsx':
+            downloaded_data[Name] = pd.read_excel(file_url, tab_name,skiprows=8)#######Need to consider automating table selection##########
+        elif extension == 'pdf':
+            # Process PDF files
+            # You will need a library like PyPDF2 or PDFMiner to read PDF files
+            pass
+        else:
+            print(f'Unsupported file type: {extension}')
 
     return downloaded_data
 
+ 
+    
+    
 
 
 ####App
@@ -112,28 +128,30 @@ if url:
   #User has inputted a URL
   st.write(check_acess(url))
   full_df = load_dataset(url)
-  csv_df = pd.DataFrame(display_dataset(full_df))
+  df_names = pd.DataFrame(display_dataset(full_df))
+  file_types = group_files(full_df)
 
   # Let the user select from the dataframe indices
   selected_names = st.multiselect('Select rows:', full_df.Name)
   selected_rows = full_df[full_df['Name'].isin(selected_names)]
   
-  file_types = group_files(full_df)
-  selected_types = st.multiselect('Select file type:', file_types.Name)
+  #file_types = group_files(full_df)
+  #selected_types = st.multiselect('Select file type:', file_types)
+
 
   # Display the selected rows
-  st.write('### Selected Rows')
+  #st.write('### Selected Rows')
   st.dataframe(selected_rows)
-  downloaded_data = get_data(selected_rows)
-  downloaded_data
-  #downloaded_data[downloaded_data['Name'].isin(selected_names)]
+  downloaded_data = get_data(selected_rows, "Calculations")
+  for name, data in downloaded_data.items():
+    st.write(f"### {name}")
+    st.table(data)
+    st.table(downloaded_data)
+  
+  #st.table(plot_chart(downloaded_data))
 
 else:
     # The user has not inputted a URL    
   st.write("Please input an URL above")
 
 
-""" dict = {'names': names, 'hrefs': hrefs}
-df = pd.DataFrame(dict)     
-# saving the dataframe
-df.to_csv('test.csv')   """
