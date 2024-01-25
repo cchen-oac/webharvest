@@ -24,7 +24,6 @@ from zipfile import ZipFile
 import requests
 from io import BytesIO
 import re
-import xlrd
 
 ##Defining functions
 #Check that the website is allowed for acces
