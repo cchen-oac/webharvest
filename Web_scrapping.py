@@ -68,21 +68,41 @@ def load_dataset(html):
     #Combine both name and refs as dictionary
     dict = {'names': names, 'hrefs': hrefs}
     df = pd.DataFrame(dict).sort_values(by=['names']).reset_index(drop=True)
-
-    df = pd.DataFrame(list(zip(name_csv, links_csv)), columns=['Name', 'links']).sort_values(by=['Name']).reset_index(drop=True)  
-    #Save it as a table
-    #links_df = pd.DataFrame({'links':links_csv}).sort_values(by=['links'])  
     return df
 
 def group_files(df):
+# Loop through rows of dataframe
+    file_extension = []
     for index, row in df.iterrows():
-        matches = re.findall(r'\.(\w+)', row['hrefs'])
-        print(matches)
-
-dict = {'names': names, 'hrefs': hrefs}
-df = pd.DataFrame(dict)     
-# saving the dataframe
-df.to_csv('test.csv')
+            matches = row['hrefs'].rsplit('.', 1)[-1] #Extact file suffix to get file types, use regex backward
+            file_extension.append(matches)
+    file_extension = pd.DataFrame(file_extension).drop_duplicates()
+    return(file_extension)
 
 
 
+
+
+
+
+#Display whether we can webscrap from this link
+if url:
+  #User has inputted a URL
+  st.write(check_acess(url))
+  full_df = load_dataset(url)
+  csv_df = pd.DataFrame(display_dataset(full_df))
+
+  # Let the user select from the dataframe indices
+  selected_names = st.multiselect('Select rows:', full_df.Name)
+  selected_rows = full_df[full_df['Name'].isin(selected_names)]
+
+  # Display the selected rows
+  st.write('### Selected Rows')
+  st.dataframe(selected_rows)
+  downloaded_data = get_data(selected_rows)
+  downloaded_data
+  #downloaded_data[downloaded_data['Name'].isin(selected_names)]
+
+else:
+    # The user has not inputted a URL    
+  st.write("Please input an URL above")
