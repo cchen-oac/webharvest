@@ -64,10 +64,9 @@ def load_dataset(url):
             name = i.text.strip()  # remove leading/trailing white spaces
             names.append(name)
             hrefs.append(link)
-
     #Combine both name and refs as dictionary
-    dict = {'Name': names, 'hrefs': hrefs}
-    df = pd.DataFrame(dict).sort_values(by=['Name']).reset_index(drop=True)
+    data_dict = {'Name': names, 'hrefs': hrefs}
+    df = pd.DataFrame(data_dict).sort_values(by=['Name']).reset_index(drop=True)
     return df
 
 #Display the available file names
@@ -84,7 +83,7 @@ def group_files(df):
     for index, row in df.iterrows():
             matches = row['hrefs'].rsplit('.', 1)[-1] #Extact file suffix to get file types, use regex backward
             file_extension.append(matches)
-    file_extension = pd.DataFrame(file_extension).drop_duplicates()
+    file_extension = list(pd.Series(file_extension).drop_duplicates())
     return(file_extension)
 
 #Download the selected file
@@ -118,6 +117,9 @@ if url:
   # Let the user select from the dataframe indices
   selected_names = st.multiselect('Select rows:', full_df.Name)
   selected_rows = full_df[full_df['Name'].isin(selected_names)]
+  
+  file_types = group_files(full_df)
+  selected_types = st.multiselect('Select file type:', file_types.Name)
 
   # Display the selected rows
   st.write('### Selected Rows')
