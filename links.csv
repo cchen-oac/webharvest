@@ -1,0 +1,1980 @@
+,0
+0,"
+"
+1,html
+2,"
+"
+3,"[if IE 9]><html lang=""en"" class=""ie9 no-js""><![endif]"
+4,"
+"
+5,[if !IE]><!
+6,"
+"
+7,"<html class=""no-js menu-closed"" lang=""en"">
+<!--<![endif]-->
+<head>
+<!-- zpdt4 -->
+<meta content=""IE=edge"" http-equiv=""X-UA-Compatible""/>
+<meta content=""text/html; charset=utf-8"" http-equiv=""Content-type""/>
+<meta content=""width=device-width, initial-scale=1.0"" name=""viewport"">
+<title>Technical information for Solvency II firms | Bank of England</title>
+<meta content="""" name=""description"">
+<meta content=""telephone=no"" name=""format-detection""/>
+<meta content=""Technical information for Solvency II firms"" property=""og:title""/>
+<meta content=""The PRA publishes technical information for UK insurance firms subject to Solvency II to calculate technical provisions. The information includes risk-free rate term structures, fundamental spreads for the calculation of the matching adjustment and, for each relevant national insurance market, the volatility adjustments. We also publish the symmetric adjustment to the equity capital charge (SAECC) that informs insurance firms’ capital calculations."" property=""og:description""/>
+<meta content=""https://www.bankofengland.co.uk/-/media/boe/images/logo/boe-default "" property=""og:image""/>
+<meta content=""article"" property=""og:type"">
+<meta content=""https://www.bankofengland.co.uk/prudential-regulation/key-initiatives/solvency-ii/technical-information"" property=""og:url"">
+<meta content=""summary_large_image"" name=""twitter:card""/>
+<meta content=""Technical information for Solvency II firms"" name=""twitter:title""/>
+<meta content=""The PRA publishes technical information for UK insurance firms subject to Solvency II to calculate technical provisions. The information includes risk-free rate term structures, fundamental spreads for the calculation of the matching adjustment and, for each relevant national insurance market, the volatility adjustments. We also publish the symmetric adjustment to the equity capital charge (SAECC) that informs insurance firms’ capital calculations."" name=""twitter:description""/>
+<meta content=""https://www.bankofengland.co.uk/-/media/boe/images/logo/boe-default "" name=""twitter:image""/>
+<script>
+		var CheckCookies = {
+			getCookie: function (cname) {
+				var name = cname + ""="";
+				var decodedCookie = decodeURIComponent(document.cookie);
+				var ca = decodedCookie.split(';');
+				for (var i = 0; i < ca.length; i++) {
+					var c = ca[i];
+					while (c.charAt(0) === ' ') {
+						c = c.substring(1);
+					}
+					if (c.indexOf(name) === 0) {
+						return c.substring(name.length, c.length);
+					}
+				}
+				return """";
+			}
+		};
+		var SetAnalytics = {
+			setTagManager: function () {
+				var hasConsentAnalytics = CheckCookies.getCookie('boeconsent');
+				if (hasConsentAnalytics === ""analytics"") {
+					(function (w, d, s, l, i) {
+						w[l] = w[l] || []; w[l].push({
+							'gtm.start':
+								new Date().getTime(), event: 'gtm.js'
+						}); var f = d.getElementsByTagName(s)[0],
+							j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+								'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+					})(window, document, 'script', 'dataLayer', 'GTM-5H35J9');
+				}
+			},
+		}
+		SetAnalytics.setTagManager();
+		</script>
+<script>
+		var el = document.getElementsByTagName('html')[0];
+		if (el.classList) {
+			el.classList.remove('no-js');
+		} else {
+			el.className = el.className.replace('no-js', '');
+		}
+	</script>
+<link href=""/styles/boe.vendor.min.css?ver=0"" media=""screen,print"" rel=""stylesheet""/>
+<link href=""/styles/BoE.min.css?ver=0"" media=""screen,print"" rel=""stylesheet""/>
+<!-- Tracking Disabled -->
+<link href=""/favicon-32x32.png?ver=0"" rel=""icon"" sizes=""32x32"" type=""image/png""/>
+<link href=""/favicon-96x96.png?ver=0"" rel=""icon"" sizes=""96x96"" type=""image/png""/>
+<link href=""/favicon-16x16.png?ver=0"" rel=""icon"" sizes=""16x16"" type=""image/png""/>
+<link href=""/favicon.ico?ver=0"" rel=""icon"" sizes=""any""/>
+<link href=""/favicon.svg?ver=0"" rel=""icon"" type=""image/svg+xml""/>
+<link href=""/favicon-180x180.png?ver=0"" rel=""apple-touch-icon""/>
+<link href=""/-/media/css/cludosearchmin.css?ver=0"" rel=""stylesheet"" type=""text/css"">
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push([""addVar"",{""rua.upush"":""false"",""rua.cpush"":""false"",""rua.upre"":""false"",""rua.cpre"":""false"",""rua.uprl"":""false"",""rua.cprl"":""false"",""rua.cprf"":""false"",""rua.trans"":"""",""rua.cook"":""false"",""rua.ims"":""false"",""rua.ufprl"":""false"",""rua.cfprl"":""false"",""rua.isuxp"":""false"",""rua.texp"":""norulematch""}]);</script>
+<script>!function(a){var e=""https://s.go-mpulse.net/boomerang/"",t=""addEventListener"";if(""False""==""True"")a.BOOMR_config=a.BOOMR_config||{},a.BOOMR_config.PageParams=a.BOOMR_config.PageParams||{},a.BOOMR_config.PageParams.pci=!0,e=""https://s2.go-mpulse.net/boomerang/"";if(window.BOOMR_API_key=""9R3WH-S6EDC-8JGQW-55286-CGTTF"",function(){function n(e){a.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!a.BOOMR||!a.BOOMR.version&&!a.BOOMR.snippetExecuted){a.BOOMR=a.BOOMR||{},a.BOOMR.snippetExecuted=!0;var i,_,o,r=document.createElement(""iframe"");if(a[t])a[t](""load"",n,!1);else if(a.attachEvent)a.attachEvent(""onload"",n);r.src=""javascript:void(0)"",r.title="""",r.role=""presentation"",(r.frameElement||r).style.cssText=""width:0;height:0;border:0;display:none;"",o=document.getElementsByTagName(""script"")[0],o.parentNode.insertBefore(r,o);try{_=r.contentWindow.document}catch(O){i=document.domain,r.src=""javascript:var d=document.open();d.domain='""+i+""';void(0);"",_=r.contentWindow.document}_.open()._l=function(){var a=this.createElement(""script"");if(i)this.domain=i;a.id=""boomr-if-as"",a.src=e+""9R3WH-S6EDC-8JGQW-55286-CGTTF"",BOOMR_lstart=(new Date).getTime(),this.body.appendChild(a)},_.write(""<bo""+'dy onload=""document._l();"">'),_.close()}}(),"""".length>0)if(a&&""performance""in a&&a.performance&&""function""==typeof a.performance.setResourceTimingBufferSize)a.performance.setResourceTimingBufferSize();!function(){if(BOOMR=a.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var e=""""==""true""?1:0,t="""",n=""cttuqq5ydmg56znsjyva-f-95b319759-clientnsv4-s.akamaihd.net"",i=""false""==""true""?2:1,_={""ak.v"":""36"",""ak.cp"":""445139"",""ak.ai"":parseInt(""286733"",10),""ak.ol"":""0"",""ak.cr"":5,""ak.ipv"":4,""ak.proto"":""http/1.1"",""ak.rid"":""10990823"",""ak.r"":41485,""ak.a2"":e,""ak.m"":""a"",""ak.n"":""essl"",""ak.bpcip"":""20.231.72.0"",""ak.cport"":1025,""ak.gh"":""23.220.107.133"",""ak.quicv"":"""",""ak.tlsv"":""tls1.2"",""ak.0rtt"":"""",""ak.csrc"":""-"",""ak.acc"":""reno"",""ak.t"":""1706184234"",""ak.ak"":""hOBiQwZUYzCg5VSAfCLimQ==dy0grzjFjVS75Z/Xhu9zzJHQHdTZlO9MQC/iRV5zAc3/ABzwFGwtgTFPH9tjgs35tlO3UiPBT+q1FmK/QOQ9r9UmhuP7tRsImSnOlE7gYD2KyFxhADVBnE+ng8NTV+dNw3QYyprqpBqUUSGnX+CCFDCZayMaP/VBIJSL7FwwXUDBaGJFpv5xlu3Io66VS5H6qS6YliFDJJZ7cObZHsLJ/5pKuHVSshNMLrjGdfeJ9wkm3yXpt//N3cNYYDOT4vqBuzLM8yQQ2SLeBXo9iaHrpRRMRFHCbpX4vqhW/asUx563eAhe5gz+n+iU86bHbXXpoEWOYj006ktKQak2mBG4ONOm9U6kbNiVMuEhHus1+4eFigJWkvs27vsAWTYOJKoFQLJpZWJW8AQBKFyAUZz86zgZxSxx45m0v09b1ve2BMc="",""ak.pv"":""276"",""ak.dpoabenc"":"""",""ak.tf"":i};if(""""!==t)_[""ak.ruds""]=t;var o={i:!1,av:function(e){var t=""http.initiator"";if(e&&(!e[t]||""spa_hard""===e[t]))_[""ak.feo""]=void 0!==a.aFeoApplied?1:0,BOOMR.addVar(_)},rv:function(){var a=[""ak.bpcip"",""ak.cport"",""ak.cr"",""ak.csrc"",""ak.gh"",""ak.ipv"",""ak.m"",""ak.n"",""ak.ol"",""ak.proto"",""ak.quicv"",""ak.tlsv"",""ak.0rtt"",""ak.r"",""ak.acc"",""ak.t"",""ak.tf""];BOOMR.removeVar(a)}};BOOMR.plugins.AK={akVars:_,akDNSPreFetchDomain:n,init:function(){if(!o.i){var a=BOOMR.subscribe;a(""before_beacon"",o.av,null,null),a(""onbeacon"",o.rv,null,null),o.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></link></meta></meta></meta></meta></head>
+<body>
+<div class=""wrap"" itemscope="""" itemtype=""http://schema.org/WebPage"">
+<div class=""cookie-notice"">
+<div class=""cookie-notice__panel"">
+<div class=""cookie-content content-block"">
+<h2 class=""cookie-title exclude-navigation"">Our use of cookies</h2>
+<p>We use necessary cookies to make our site work (for example, to manage your session). We’d also like to use some non-essential cookies (including third-party cookies) to help us improve the site. By clicking ‘Accept recommended settings’ on this banner, you accept our use of optional cookies.</p>
+<table class=""cookie-notice__table"">
+<tr>
+<th>Necessary cookies</th>
+<th>Analytics cookies</th>
+<td class=""table-header""> </td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>Yes</td>
+<td>
+<button class=""cookie__button btn btn-default"" data-cookie=""analytics"">Accept recommended cookies</button>
+</td>
+</tr>
+<tr>
+<td>Yes</td>
+<td>No</td>
+<td><button class=""cookie__button btn btn-default btn-neutral"" data-cookie=""necessary"">Proceed with necessary cookies only</button></td>
+</tr>
+</table>
+<h3>Necessary cookies</h3>
+<p>Necessary cookies enable core functionality on our website such as security, network management, and accessibility. You may disable these by changing your browser settings, but this may affect how the website functions. </p>
+<h3>Analytics cookies</h3>
+<p>We use analytics cookies so we can keep track of the number of visitors to various parts of the site and understand how our website is used. For more information on how these cookies work please see our <a href=""/legal/privacy-and-cookie-policy"">Cookie policy</a>.</p>
+</div>
+</div>
+</div>
+<div class=""nav-bypass"">
+<a class=""nav-bypass__link"" href=""#main-content"">Skip to main content</a>
+</div>
+<header class=""global-header"" itemscope="""" itemtype=""http://schema.org/WPHeader"">
+<div class=""container"">
+<div class=""col12"">
+<div class=""header-brand"" itemscope="""" itemtype=""http://schema.org/Organisation"">
+<a class=""header-logo"" href=""/"" itemscope="""" itemtype=""http://schema.org/Brand"">
+<img alt=""Bank of England home"" src=""/-/media/boe/images/logo/logo-boe.svg?iar=0&amp;mh=61&amp;hash=2C88D4FFDD47844D6BD2541F5A92D70F""/>
+</a>
+</div>
+<div class=""header-nav"" id=""menu"">
+<nav aria-label=""Main navigation"" class=""container-nav-primary"" data-nav-primary="""" id=""container-nav-primary"" itemscope="""" itemtype=""http://schema.org/SiteNavigationElement"" role=""navigation"">
+<button aria-controls=""main-menu"" class=""nav-primary__button"" data-nav-toggle="""">
+<span class=""icon-menu""><span class=""visually-hidden"">Main menu</span></span>
+<span class=""icon-cross""><span class=""visually-hidden"">Close main menu</span></span>
+</button>
+<ul class=""nav-primary"" id=""main-menu"">
+<li class=""nav-primary__list-item nav-primary__list-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__link"" href=""#"">
+        Topics
+    </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">
+			Open Explore sub menu
+		</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__sublist-link"" href=""/banknotes"">
+                        Banknotes
+                    </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open Banknotes sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                                Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/banknotes/banknote-characters"">
+                                    Choosing banknote characters 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/banknotes/counterfeit-banknotes"">
+                                    Counterfeit banknotes 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/banknotes/current-banknotes"">
+                                    Current banknotes 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/banknotes/damaged-and-contaminated-banknotes"">
+                                    Damaged and contaminated banknotes 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/banknotes/exchanging-old-banknotes"">
+                                    Exchanging old banknotes 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/banknotes/note-circulation-scheme"">
+                                    Note Circulation Scheme 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/banknotes/retailers-and-businesses"">
+                                    Advice for retailers and businesses 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/banknotes/scottish-and-northern-ireland-banknotes"">
+                                    Scottish and Northern Ireland banknotes 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/banknotes/using-images-of-banknotes"">
+                                    Using images of banknotes 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/banknotes/wholesale-cash-distribution-in-the-future"">
+                                    Wholesale cash distribution in the future 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/banknotes/withdrawn-banknotes"">
+                                    Withdrawn banknotes 
+                                </a>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__sublist-link"" href=""/careers"">
+                        Careers
+                    </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open Careers sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                                Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/careers/career-stories"">
+                                    Career stories 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/careers/early-careers"">
+                                    Future talent 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/careers/information-for-job-applicants"">
+                                    Information for job applicants 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/careers/why-you-should-join-us"">
+                                    Why you should join us 
+                                </a>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/climate-change"">
+                        Climate change
+                    </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/the-digital-pound"">
+                        Digital pound
+                    </a>
+</li>
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__sublist-link"" href=""/education"">
+                        Education
+                    </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open Education sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                                Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/education/competitions"">
+                                    Competitions 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/education/education-resources"">
+                                    Education resources 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/education/research-support-programme"">
+                                    Research support programme 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/education/school-visits"">
+                                    Request a speaker for your school 
+                                </a>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__sublist-link"" href=""/financial-stability"">
+                        Financial stability
+                    </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open Financial stability sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                                Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/financial-stability/financial-market-infrastructure-supervision"">
+                                    Financial market infrastructure supervision 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/financial-stability/operational-resilience-of-the-financial-sector"">
+                                    Operational resilience of the financial sector 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/financial-stability/resolution"">
+                                    Resolution 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/financial-stability/trade-repository-data"">
+                                    Trade Repository (TR) Data Collections 
+                                </a>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/gold"">
+                        Gold
+                    </a>
+</li>
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__sublist-link"" href=""/markets"">
+                        Markets
+                    </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open Markets sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                                Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/markets/bank-of-england-market-operations-guide"">
+                                    Bank of England Market Operations Guide 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/markets/eligible-collateral"">
+                                    Eligible collateral 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/markets/fair-and-effective-markets"">
+                                    Fair and Effective Markets  
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/markets/foreign-currency-reserves"">
+                                    Foreign currency reserves 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/markets/greening-the-corporate-bond-purchase-scheme"">
+                                    Greening our Corporate Bond Purchase Scheme (CBPS) 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/markets/market-intelligence"">
+                                    Market intelligence 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/markets/money-markets-committee-and-uk-money-markets-code"">
+                                    Money Markets Committee and UK Money Markets Code 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/markets/collateral-and-settlement"">
+                                    Settlement and collateral management 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/markets/sonia-benchmark"">
+                                    SONIA interest rate benchmark 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/markets/the-sterling-bond-portfolio"">
+                                    The Sterling Bond Portfolio 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/markets/transition-to-sterling-risk-free-rates-from-libor"">
+                                    Transition from LIBOR to risk-free rates 
+                                </a>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__sublist-link"" href=""/monetary-policy"">
+                        Monetary policy
+                    </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open Monetary policy sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                                Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/monetary-policy/inflation"">
+                                    Inflation and the 2% target 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/monetary-policy/quantitative-easing"">
+                                    Quantitative easing 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/monetary-policy/the-interest-rate-bank-rate"">
+                                    Interest rates and Bank Rate 
+                                </a>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__sublist-link"" href=""/payment-and-settlement"">
+                        Payment and settlement
+                    </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open Payment and settlement sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                                Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/payment-and-settlement/chaps"">
+                                    CHAPS 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/payment-and-settlement/cross-border-payments"">
+                                    Cross-border payments 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/payment-and-settlement/payment-and-settlement-statistics"">
+                                    Payment and settlement statistics 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/payment-and-settlement/rtgs-renewal-programme"">
+                                    RTGS Renewal Programme 
+                                </a>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__sublist-link"" href=""/prudential-regulation"">
+                        Prudential regulation
+                    </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open Prudential regulation sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                                Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/prudential-regulation/authorisations"">
+                                    Authorisations 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/prudential-regulation/new-bank-start-up-unit"">
+                                    New Bank Start-up Unit 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/prudential-regulation/new-insurer-start-up-unit"">
+                                    New Insurer Start-up Unit 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/prudential-regulation/policy"">
+                                    Policy 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/prudential-regulation/pra-statutory-powers"">
+                                    The PRA’s statutory powers and enforcement 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/prudential-regulation/prudential-and-resolution-policy-index"">
+                                    Prudential and Resolution Policy Index 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/prudential-regulation/regulatory-reporting"">
+                                    Regulatory reporting 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/prudential-regulation/secondary-competition-objective"">
+                                    Our secondary objectives 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/prudential-regulation/supervision"">
+                                    Supervision 
+                                </a>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__sublist-link"" href=""/research"">
+                        Research
+                    </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open Research sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                                Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/research/bank-of-england-agenda-for-research"">
+                                    Bank of England Agenda for Research 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/research/fintech"">
+                                    Fintech 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/research/future-finance"">
+                                    The Future of Finance - our response 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/research/visitor-programme"">
+                                    Research Visitor Programme 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/research/research-funding-and-fellowships"">
+                                    Research funding and fellowships 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/research/researchers"">
+                                    Researchers 
+                                </a>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__sublist-link"" href=""/statistics"">
+                        Statistics
+                    </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open Statistics sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                                Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/statistics/banknote"">
+                                    Banknote statistics 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/statistics/tables"">
+                                    Bankstats tables 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/statistics/data-collection"">
+                                    Data collection 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/statistics/exchange-rates"">
+                                    Exchange rates 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/statistics/gold"">
+                                    Gold statistics 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/statistics/gdp-real-time-database"">
+                                    Gross Domestic Product Real-Time Database 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/statistics/option-implied-probability-density-functions"">
+                                    Option-implied probability density functions 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/statistics/research-datasets"">
+                                    Research datasets 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/statistics/statistics-requested-by-users"">
+                                    Statistics requested by users 
+                                </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/statistics/yield-curves"">
+                                    Yield curves 
+                                </a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__list-item nav-primary__list-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__link"" href=""/about"">
+<span>About</span>
+</a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open About sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+							Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__sublist-link"" href=""/about/get-involved"">
+                                Get involved
+                        </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open Get involved sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                                        Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/get-involved/citizens-panels"">
+                                                Citizens’ Forum
+                                            </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/get-involved/community-forums"">
+                                                Community forums
+                                            </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/get-involved/community-partners"">
+                                                Partners
+                                            </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/get-involved/youth-forum"">
+                                                Youth voice
+                                            </a>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__sublist-link"" href=""/about/governance-and-funding"">
+                                Governance and funding
+                        </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open Governance and funding sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                                        Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/governance-and-funding/staff-codes-and-policies"">
+                                                Staff codes and policies
+                                            </a>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/history"">
+                                History
+                        </a>
+</li>
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__sublist-link"" href=""/about/people"">
+                                Our people
+                        </a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open Our people sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+                                        Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/people/agents"">
+                                                Agents
+                                            </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/people/chief-cashiers"">
+                                                Chief Cashiers
+                                            </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/people/court-of-directors"">
+                                                Court of Directors
+                                            </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/people/executive-directors"">
+                                                Executive Directors
+                                            </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/people/financial-policy-committee"">
+                                                Financial Policy Committee
+                                            </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/people/governors"">
+                                                Governors
+                                            </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/people/monetary-policy-committee"">
+                                                Monetary Policy Committee
+                                            </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/about/people/prudential-regulation-committee"">
+                                                Prudential Regulation Committee
+                                            </a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__list-item nav-primary__list-item--has-children"" data-nav-has-children="""">
+<a class=""nav-primary__link"" href=""/news"">
+<span>News and publications</span>
+</a>
+<button class=""nav-primary__dropdown-toggle"">
+<span class=""visually-hidden"">Open News and publications sub menu</span>
+</button>
+<ul class=""nav-primary__sublist"">
+<li class=""nav-primary__sublist-item nav-primary__sublist-item--back"">
+<a class=""nav-primary__sublist-link"" data-nav-back="""" href=""#"">
+							Back <span class=""visually-hidden"">to main menu</span>
+</a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/news/events"">
+                                Events
+                        </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/news/news"">
+                                News and minutes
+                        </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/news/prudential-regulation"">
+                                Prudential regulation publications
+                        </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/news/publications"">
+                                Publications
+                        </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/news/speeches"">
+                                Speeches
+                        </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/news/statistics"">
+                                Statistical releases
+                        </a>
+</li>
+<li class=""nav-primary__sublist-item"">
+<a class=""nav-primary__sublist-link"" href=""/news/upcoming"">
+                                Upcoming
+                        </a>
+</li>
+</ul>
+</li>
+<li class=""nav-primary__list-item"">
+<a class=""nav-primary__link"" href=""/museum"">
+<span>Museum</span>
+</a>
+</li>
+<li class=""nav-primary__list-item"">
+<a class=""nav-primary__link"" href=""/contact"">
+<span>Contact</span>
+</a>
+</li>
+<li class=""nav-primary__list-item"">
+<div class=""search-widget"">
+<form class="""" id=""cludo-search-form"">
+<div class=""search-widget-fields"">
+<label class=""label-hidden"" for=""clu-q"">Search</label>
+<input autocomplete=""off"" class=""search-widget-field"" data-empty=""Search the Bank of England"" data-placeholder=""Search the Bank of England"" id=""clu-q"" name=""q"" onkeyup=""removeErrorMessage(event)"" placeholder=""Search the Bank of England"" tabindex=""0"" type=""search"" value=""""/>
+<div aria-label=""Clear all search text"" id=""clearInput"" role=""button"" tabindex=""0""></div>
+<input class=""search-widget-btn"" id=""searchBtn"" tabindex=""0"" type=""submit"" value=""""/>
+</div>
+</form>
+<input class=""search-widget-btn search-widget-btn--overlay"" id=""searchBtn-nosearch"" onclick=""giveErrorIfEmpty()"" tabindex=""0"" type=""submit"" value=""""/>
+<div class=""search-widget-error"" id=""search-error"" role=""alert""><p>Nothing searched for. Please enter a search term.</p></div>
+</div>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+</header>
+<main class=""main"" id=""main-content"" role=""main"">
+<section class=""page-banner"">
+<div class=""page-banner__head"">
+<div class=""container"">
+<div class=""col9"">
+<nav aria-label=""Breadcrumb"">
+<ol class=""list-breadcrumbs"">
+<li class=""list-breadcrumbs__item"">
+<a class=""list-breadcrumbs__link"" href=""/"">
+				Home
+			</a>
+</li>
+<li class=""list-breadcrumbs__item"">
+<a class=""list-breadcrumbs__link"" href=""/prudential-regulation"">
+				Prudential regulation
+			</a>
+</li>
+<li class=""list-breadcrumbs__item"">
+<a class=""list-breadcrumbs__link"" href=""/prudential-regulation/key-initiatives/solvency-ii"">
+				Solvency II
+			</a>
+</li>
+<li aria-current=""page"" class=""list-breadcrumbs__item list-breadcrumbs__item--active"">
+			Technical information for Solvency II firms
+		</li>
+</ol>
+</nav>
+<h1 itemprop=""name"">Technical information for Solvency II firms</h1>
+</div>
+</div>
+</div>
+<div class=""page-banner__body"">
+<div class=""container"">
+<div class=""col9 m-3_4"">
+<div class=""page-description"" itemprop=""description"">
+<span class=""hero"">The PRA publishes technical information for UK insurance firms subject to Solvency II to calculate technical provisions. The information includes risk-free rate term structures, fundamental spreads for the calculation of the matching adjustment and, for each relevant national insurance market, the volatility adjustments. We also publish the symmetric adjustment to the equity capital charge (SAECC) that informs insurance firms’ capital calculations.</span>
+</div>
+</div>
+<div class=""col3 m-1_4"">
+<div class=""related-links-wrap"">
+<ul class=""accordion"" data-accordion-mobile="""">
+<li>
+<div class=""accordion-head"">
+<h2 class=""exclude-navigation"">
+<span class=""display-lap-desk"">Related links</span>
+<button class=""accordion-button"">
+						Related links
+						<span class=""accordion-toggle""></span>
+</button>
+</h2>
+</div>
+<div class=""accordion-content"">
+<ul class=""related-links"">
+<li>
+<a href=""/prudential-regulation/key-initiatives/solvency-ii"">
+			Solvency II
+		</a>
+</li>
+<li>
+<a href=""/prudential-regulation/publication/2020/the-pras-approach-to-publication-of-sii-technical-information"">
+			Statement of Policy 'The PRA's approach to the publication of Solvency II technical information'
+		</a>
+</li>
+<li>
+<a href=""/prudential-regulation/key-initiatives/solvency-ii/dlt-assessments-jan22"">
+			Deep, liquid, and transparent (DLT) assessments for January 2022 implementation
+		</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=""page-section"">
+<div class=""container"">
+<div class=""col12"">
+<div class=""anchor-links-wrap"" data-headertype=""H2"" data-pageeditor=""False"" data-title=""On this page"">
+</div>
+</div>
+<div class=""clear""></div>
+</div>
+</section>
+<section class=""page-section"">
+<div class=""container"">
+<div class=""col9"">
+<div class=""content-block"">
+<div class=""page-content"" data-id=""7923a0da7e8048009e0d64e87e73b90b"">
+<h2>Risk-free rates (RFR)</h2>
+<p>From 11pm on 31 December 2020 onward, UK insurance firms are required to use technical information published by the PRA to calculate the technical provisions required by Solvency II. The European Insurance and Occupational Pensions Authority (EIOPA) <a href=""https://www.eiopa.europa.eu/tools-and-data/risk-free-interest-rate-term-structures_en"" rel=""noopener noreferrer"" target=""_blank"">publishes similar information for use by EU insurance firms</a>, including EU subsidiaries of UK insurance groups.   </p>
+<p>Our technical information consists of schedules of risk-free interest rates in a number of currencies.  Firms use these rates to calculate the present value of the expected future costs of honouring their obligations to policyholders.  </p>
+<p>We publish technical information monthly (on or before the eighth working day of the month) and include the following information for each currency:</p>
+<ul>
+<li>Basic risk-free rate curves;</li>
+<li>Fundamental spreads (FS), used by insurers to calculate the risk-free curve for liabilities within a matching adjustment portfolio; </li>
+<li>Risk-free rate curves for liabilities where the insurers are permitted to use a <a href=""/prudential-regulation/publication/2018/solvency-ii-internal-models-modelling-of-the-volatility-adjustment-ss"">volatility adjustment (VA)</a>.</li>
+</ul>
+<p>For the publication of technical information, we rely on data obtained from established third-party providers. However, it may be necessary for us to amend, from time to time, technical information after it has been published if data errors are subsequently identified. </p>
+<h3>RFR updates due to Libor transitions</h3>
+<p>For technical information published with a reference date from and including Saturday 31 July 2021, the RFRs for GBP will be based on Sterling Overnight Index Average (SONIA) overnight index swap rates, with zero Credit Risk Adjustment. </p>
+<p>From Saturday 1 January 2022, the RFRs for JPY will be based on Japanese government bonds, with zero Credit Risk Adjustment (CRA). From the same date, the CRA for EUR RFRs will be based on Euro Ibor (Euribor) and Euro short-term rate (€STR) data (instead of the Euro Over Night Index Average (EONIA) which will cease publication).</p>
+<p>Further details can be found in <a href=""https://www.bankofengland.co.uk/prudential-regulation/publication/2021/january/solvency-ii-deep-liquid-and-transparent-assessments-gbp-transition-to-sonia"">Policy Statement (PS) 12/21 ‘Solvency II: Deep, liquid and transparent assessments, and GBP transition to SONIA’</a>.</p>
+<p style=""margin-bottom: 1em;"">From Sunday 1 January 2023, the RFRs for USD will be based on Secured Overnight Financing Rate (SOFR) swap rates with zero CRA. This transition is consistent with the approach outlined in PS12/21. Details of the PRA’s DLT assessment for USD for January 2023 implementation will be set out below. For the avoidance of doubt, the 31 December 2022 RFRs for USD will not be subject to this change. </p>
+<p>At the end of the transition period following the UK’s withdrawal from the EU, the PRA adopted EIOPA’s methodology for determining the CRAs for PRA relevant currencies (unless otherwise set out in statement of policy - <a href=""/prudential-regulation/publication/2020/the-pras-approach-to-publication-of-sii-technical-information"">The PRA’s approach to the publication of Solvency II technical information</a>). The CRA for each PRA relevant currency is determined using a hierarchy of methods, depending on the data available for each currency (see p.33 of <a href=""https://www.eiopa.europa.eu/system/files/2020-08/21.08.2020_-_technical_documentation.pdf"" rel=""noopener noreferrer"" target=""_blank"">EIOPA 2020 technical documentation</a>). </p>
+<p>Due to the cessation of USD Libor in June 2023, the PRA is updating Method 3 for calculating the CRA:</p>
+<ul>
+<li>Method 3 only applies to currencies that do not have sufficient data on IBOR / OIS instruments to apply Method 1, and are not EEA currencies (meaning that Method 2 is not applicable). </li>
+<li>From 1 October 2023, the CRA determined using Method 3 will be calculated as a 15bps upward adjustment to the uncapped Euro CRA. The output of this calculation will then be constrained within 10 and 35bps. </li>
+<li>As Method 3 is not currently used for any PRA relevant currency CRA, this change is expected to have no immediate impact on the technical information published by the PRA.</li>
+</ul>
+</div>
+</div>
+</div>
+<div class=""clear""></div>
+</div>
+</section>
+<section class=""page-section"">
+<div class=""container"">
+<div class=""col9"">
+<div class=""content-block"">
+<div class=""page-content"" data-id=""8e4db566d58347ac899b9b9c9c49f098"">
+<h2>Other RFR updates</h2>
+<p>From 1 January 2023 onwards, the PRA will cease to provide technical information for Japanese Yen (JPY). This is due to JPY no longer meeting the criteria outlined in paragraphs 3.3 to 3.5B of the Statement of Policy ‘The PRA’s approach to the publication of Solvency II technical information’. The PRA will continue to provide technical information for the remaining eight currencies. For the avoidance of doubt, the PRA will provide technical information for JPY for 31 December 2022. </p>
+</div>
+</div>
+</div>
+<div class=""clear""></div>
+</div>
+</section>
+<section class=""page-section"">
+<div class=""container"">
+<div class=""col9"">
+<div class=""content-block"">
+<div class=""page-content"" data-id=""d7d8c398a02a4ceb8e61970ba5847aef"">
+<h2>Deep, liquid, and transparent (DLT) assessments</h2>
+<p>The RFRs published by us must be based on financial instruments traded in a deep, liquid, and transparent (DLT) financial market. A DLT assessment of each relevant market must be carried out to determine for which maturities of instrument that market is DLT; rates for those maturities are then used as inputs to the RFR curve. For 2021, we have retained the results of EIOPA’s DLT assessments for each PRA relevant currency. We will publish updated DLT assessments on an annual basis to be applied in future years. We will also update a DLT assessment (outside the annual assessment) when a Libor-based RFR transitions to an alternative reference instrument. </p>
+<h3>DLT assessments for January 2024 implementation</h3>
+<p>On Monday 30 October 2023, the PRA published the <a href=""/prudential-regulation/key-initiatives/solvency-ii/dlt-assessments-jan24"">outcomes of the 2023 DLT assessments</a>, which will apply from Monday 1 January 2024.</p>
+<h3>DLT assessments for January 2023 implementation </h3>
+<p>On Thursday 20 October 2022, the PRA published the <a href=""/prudential-regulation/key-initiatives/solvency-ii/dlt-assessments-jan23"">outcomes of the 2022 DLT assessments</a>, which will apply from Sunday 1 January 2023.</p>
+<h3>DLT assessments for January 2022 implementation</h3>
+<p>On Friday 1 October 2021, the PRA published <a href=""/prudential-regulation/key-initiatives/solvency-ii/dlt-assessments-jan22"">the outcomes of its DLT assessments</a> which will apply from Saturday 1 January 2022.</p>
+<h3>DLT assessments for implementation in 2021</h3>
+<p>The PRA initially retained the results of EIOPA’s DLT assessments to apply for each PRA relevant currency in 2021. On Thursday 3 June 2021 we <a href=""/prudential-regulation/publication/2021/june/dlt-assessment-of-the-sonia-ois-market-june-2021"">published a report</a> setting out the results and analysis for our first DLT assessment of the SONIA OIS market. The report was produced to support the transition of the GBP RFR to reference SONIA OIS (instead of Libor swaps) from July 2021 onwards. </p>
+</div>
+</div>
+</div>
+<div class=""clear""></div>
+</div>
+</section>
+<section class=""page-section"">
+<div class=""container"">
+<div class=""col9"">
+<div class=""content-block"">
+<div class=""page-content"" data-id=""e089539b0c5f44b4b35cce0e77450e12"">
+<h2>Volatility adjustment (VA) reference portfolios</h2>
+<p>The VA is an adjustment to the basic risk-free rate that reflects a proportion of the additional return that an insurer may expect to earn from investing in government and corporate bonds, rather than risk-free equivalents. We determine the VA by calculating the additional return on reference portfolios that are typical of UK insurance firms’ asset holdings in different currencies. We update the reference portfolios in our calculations on 31 March each year.  </p>
+<p>The reference portfolios for the year from and including 31 March 2024 are now available, alongside those used from and including 31 March 2021. Prior to 31 March 2021, we used reference portfolios published by EIOPA.</p>
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/pra-va-reference-portfolios-from-31-march-2024.xlsx"" target=""_blank"">VA reference portfolios from and including 31 March 2024 (XLSX)</a></li>
+<ul class=""list-links"">
+<li class=""list-links__item""> <a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/pra-va-reference-portfolios-from-31-march-2023.xlsx"" target=""_blank"">VA reference portfolios from and including 31 March 2023 <span>(XLSX)</span></a></li>
+<li class=""list-links__item""> <a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/pra-va-reference-portfolios-from-31-march-2022.xlsx"" target=""_blank"">VA reference portfolios from and including 31 March 2022 <span>(XLSX)</span></a></li>
+<li class=""list-links__item""> <a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/pra-va-reference-portfolios-from-31-march-2021.xlsx"" target=""_blank"">VA reference portfolios from and including 31 March 2021 <span>(XLSX)</span></a></li>
+</ul>
+</ul>
+</div>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""5c8ec17901d34ddaacfa1abf87351366"">
+<ul class=""list-links"">
+<li class=""list-links__item"" style=""margin-top: 0.313em; margin-bottom: 0.438em;"">
+<p><span style=""color: black;"">Following a review of the methodology and an update to the PRA’s <a href=""/prudential-regulation/publication/2020/the-pras-approach-to-publication-of-sii-technical-information"">Statement of Policy</a> on Solvency II technical information, the PRA has made two changes to the derivation of the VA reference portfolios in order to improve their relevance for UK firms. The changes are described in the PRA Statement of Policy and are not expected to have a material impact on the VA published each month.</span></p>
+<div>
+<div id=""_com_2"" language=""JavaScript""> </div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class=""clear""></div>
+</div>
+</section>
+<section class=""page-section"">
+<div class=""container"">
+<div class=""col9"">
+<div class=""content-block"">
+<div class=""page-content"" data-id=""1cdd937ab5a14af996504d8cc8ebb174"">
+<h2>Symmetric adjustment to the equity capital charge (SAECC)</h2>
+<p>Insurance firms calculate a solvency capital requirement (SCR), which is the amount of money they should hold in addition to their liabilities to provide a cushion against unexpected events. The Standard Formula SCR calculation includes a test of the impact on firms’ assets and liabilities of a fall in equity prices. We publish one key input to this calculation – the SAECC – every month. The SAECC is based on movements in four major equity indices over the preceding 36 months.</p>
+<p>As a temporary measure, UK insurers were asked to use the EIOPA SAECC for valuations from 31 December 2020 to 30 March 2021. However, from 31 March 2021 firms should use the following spreadsheet which shows the SAECC based on UK insurers’ exposures. The spreadsheet also shows historical levels of the SAECC as if they had been calculated using the methodology that applies from 31 March 2021.</p>
+<ul class=""list-links"">
+<li class=""list-links__item""> <a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/saecc-dec-2023.xlsx"">Symmetric Adjustment Equity Capital Charge <span>(XLSX)</span></a> </li>
+</ul>
+</div>
+</div>
+</div>
+<div class=""clear""></div>
+</div>
+</section>
+<section class=""page-section"">
+<div class=""container"">
+<div class=""col9"">
+<div class=""content-block"">
+<div class=""page-content"" data-id=""8b4eb3e8f2a646d690f4250e70bbae2e"">
+<h2>Monthly RFR releases</h2>
+<p>The published risk-free rates are available below, sorted by reference date. We publish the rates for each month on or before the eighth working day of the following month.</p>
+</div>
+</div>
+<ul class=""accordion"">
+<li>
+<div class=""accordion-head"">
+<h3>
+<button class=""accordion-button"">
+                                2023<span class=""accordion-toggle""></span>
+</button>
+</h3>
+</div>
+<div class=""accordion-content"">
+<div class=""content-block"">
+<div class=""content-block""><p><strong>December 2023</strong></p>
+<p>Published 9 January 2024</p></div>
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-curves-31-dec-2023.xlsx"">Risk-free curves as of 31 December 2023<span> (XLSX 0.4MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-va-portfolios-31-dec-2023.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 December 2023<span> (XLSX 0.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-smith-wilson-parameters-31-dec-2023.xlsx"">Smith-Wilson extrapolation parameters as of 31 December 2023<span> (XLSX 0.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-fs-pod-and-cod-31-dec-2023.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 December 2023<span> (XLSX 1.1MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""content-block""><p><strong>November 2023</strong></p>
+<p>Published 8 December 2023</p></div>
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-curves-30-nov-2023.xlsx"">Risk-free curves as of 30 November 2023<span> (XLSX 0.4MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-va-portfolios-30-nov-2023.xlsx"">Risk-free Volatility Adjustment portfolios as of 30 November 2023<span> (XLSX 0.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-smith-wilson-parameters-30-nov-2023.xlsx"">Smith-Wilson extrapolation parameters as of 30 November 2023<span> (XLSX 0.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-fs-pod-and-cod-30-nov-2023.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 30 November 2023<span> (XLSX 1.1MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""content-block""><p><strong>October 2023</strong></p>
+<p>Published 9 November 2023</p></div>
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-curves-31-oct-2023.xlsx"">Risk-free curves as of 31 October 2023<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-va-portfolios-31-oct-2023.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 October 2023<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-smith-wilson-parameters-31-oct-2023.xlsx"">Smith-Wilson extrapolation parameters as of 31 October 2023<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-fs-pod-and-cod-31-oct-2023.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 October 2023<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""content-block""><p><strong>September 2023</strong></p>
+<p>Published 9 October 2023</p></div>
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-curves-30-sep-2023.xlsx"">Risk-free curves as of 30 September 2023<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-va-portfolios-30-sep-2023.xlsx"">Risk-free Volatility Adjustment portfolios as of 30 September 2023<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-smith-wilson-parameters-30-sep-2023.xlsx"">Smith-Wilson extrapolation parameters as of 30 September 2023<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-fs-pod-and-cod-30-sep-2023.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 30 September 2023<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""content-block""><p><strong>August 2023</strong></p>
+<p>Published 8 September 2023</p></div>
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-curves-31-aug-2023.xlsx"">Risk-free curves as of 31 August 2023<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-va-portfolios-31-aug-2023.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 August 2023<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-smith-wilson-parameters-31-aug-2023.xlsx"">Smith-Wilson extrapolation parameters as of 31 August 2023<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-fs-pod-and-cod-31-aug-2023.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 August 2023<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""content-block""><p><strong>July 2023</strong></p>
+<p>Published 8 August 2023</p></div>
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-curves-31-jul-2023.xlsx"">Risk-free curves as of 31 July 2023<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-va-portfolios-31-jul-2023.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 July 2023<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-smith-wilson-parameters-31-jul-2023.xlsx"">Smith-Wilson extrapolation parameters as of 31 July 2023<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-fs-pod-and-cod-31-jul-2023.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 July 2023<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""content-block""><p><strong>June 2023</strong></p>
+<p>Published 10 July 2023</p></div>
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-curves-30-jun-2023.xlsx"">Risk-free curves as of 30 June 2023<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-va-portfolios-30-jun-2023.xlsx"">Risk-free Volatility Adjustment portfolios as of 30 June 2023<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-smith-wilson-parameters-30-jun-2023.xlsx"">Smith-Wilson extrapolation parameters as of 30 June 2023<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-fs-pod-and-cod-30-jun-2023.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 30 June 2023<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""content-block""><p><strong>May 2023</strong></p>
+<p>Published 8 June 2023</p></div>
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-curves-31-may-2023.xlsx"">Risk-free curves as of 31 May 2023<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-va-portfolios-31-may-2023.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 May 2023<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-smith-wilson-parameters-31-may-2023.xlsx"">Smith-Wilson extrapolation parameters as of 31 May 2023<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-fs-pod-and-cod-31-may-2023.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 May 2023<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""content-block""><p><strong>April 2023</strong></p>
+<p>Published 10 May 2023</p></div>
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-curves-30-apr-2023.xlsx"">Risk-free curves as of 30 April 2023<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-va-portfolios-30-apr-2023.xlsx"">Risk-free Volatility Adjustment portfolios as of 30 April 2023<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-smith-wilson-parameters-30-apr-2023.xlsx"">Smith-Wilson extrapolation parameters as of 30 April 2023<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-fs-pod-and-cod-30-apr-2023.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 30 April 2023<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""content-block""><p><strong>March 2023</strong></p>
+<p>Published 12 April 2023</p></div>
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-curves-31-mar-2023.xlsx"">Risk-free curves as of 31 March 2023<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-va-portfolios-31-mar-2023.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 March 2023<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-smith-wilson-parameters-31-mar-2023.xlsx"">Smith-Wilson extrapolation parameters as of 31 March 2023<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-fs-pod-and-cod-31-mar-2023.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 March 2023<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""content-block""><p><strong>February 2023</strong></p>
+<p style=""margin: 0cm; padding: 0cm; border: none;""><span>Published 8 March 2023</span></p>
+<p style=""margin: 0cm; padding: 0cm; border: none;""><span> </span></p></div>
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-curves-28-feb-2023.xlsx"">Risk-free curves as of 28 February 2023<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-va-portfolios-28-feb-2023.xlsx"">Risk-free Volatility Adjustment portfolios as of 28 February 2023<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-smith-wilson-parameters-28-feb-2023.xlsx"">Smith-Wilson extrapolation parameters as of 28 February 2023<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-fs-pod-and-cod-28-feb-2023.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 28 February 2023<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""dea9d6def7c140faa3749401c4fef23a"">
+<p><span><strong>January 2023</strong></span></p>
+<p><span>Published 8 February 2023</span></p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-curves-31-jan-2023.xlsx"">Risk-free curves as of 31 January 2023<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-va-portfolios-31-jan-2023.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 January 2023<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-smith-wilson-parameters-31-jan-2023.xlsx"">Smith-Wilson extrapolation parameters as of 31 January 2023<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2023/risk-free-fs-pod-and-cod-31-jan-2023.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 January 2023<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<div class=""accordion-head"">
+<h3>
+<button class=""accordion-button"">
+                                2022<span class=""accordion-toggle""></span>
+</button>
+</h3>
+</div>
+<div class=""accordion-content"">
+<div class=""content-block"">
+<div class=""page-content"" data-id=""01543668f994457fb6808b955f06e155"">
+<p><strong>December 2022</strong></p>
+<p>Published 10 January 2023</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-curves-31-dec-2022.xlsx"">Risk-free curves as of 31 December 2022<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-va-portfolios-31-dec-2022.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 December 2022 <span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-smith-wilson-parameters-31-dec-2022.xlsx"">Smith-Wilson extrapolation parameters as of 31 December 2022<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-fs-pod-and-cod-31-dec-2022.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 December 2022<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""ea7d2c6f3b084fc9921774365573c0fc"">
+<p><strong>November 2022</strong></p>
+<p>Published 09 December 2022</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-curves-30-nov-2022.xlsx"">Risk-free curves as of 30 November 2022 <span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-va-portfolios-30-nov-2022.xlsx"">Risk-free Volatility Adjustment portfolios as of 30 November 2022 <span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-smith-wilson-parameters-30-nov-2022.xlsx"">Smith-Wilson extrapolation parameters as of 30 November 2022 <span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-fs-pod-and-cod-30-nov-2022.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 30 November 2022<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""2c40cfd2ffa447a48b4be34f0493dcda"">
+<p><strong>October 2022</strong></p>
+<p>Published 10 November 2022</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-curves-31-oct-2022.xlsx"">Risk-free curves as of 31 October 2022<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-va-portfolios-31-oct-2022.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 October 2022 <span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-smith-wilson-parameters-31-oct-2022.xlsx"">Smith-Wilson extrapolation parameters as of 31 October 2022 <span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-fs-pod-and-cod-31-oct-2022.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 October 2022 <span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""2a5facdebbd24eb797d0adef69b8037b"">
+<p><strong>September 2022</strong></p>
+<p>Published 11 October 2022</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-curves-30-sep-2022.xlsx"">Risk-free curves as of 30 September 2022<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-va-portfolios-30-sep-2022.xlsx"">Risk-free Volatility Adjustment portfolios as of 30 September 2022<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-smith-wilson-parameters-30-sep-2022.xlsx"">Smith-Wilson extrapolation parameters as of 30 September 2022<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-fs-pod-and-cod-30-sep-2022.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 30 September 2022<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""306a419cc71340a68b776e2b293731e7"">
+<p><strong>August 2022</strong></p>
+<p>Published 12 September 2022</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-curves-31-aug-2022.xlsx"">Risk-free curves as of 31 August 2022<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-va-portfolios-31-aug-2022.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 August 2022<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-smith-wilson-parameters-31-aug-2022.xlsx"">Smith-Wilson extrapolation parameters as of 31 August 2022<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-fs-pod-and-cod-31-aug-2022.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 August 2022<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""200324a0ad40497b8b1e3af68c7251d7"">
+<p><strong>July 2022</strong></p>
+<p>Published 8 August 2022</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-curves-31-jul-2022.xlsx"">Risk-free curves as of 31 July 2022<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-va-portfolios-31-jul-2022.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 July 2022<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-smith-wilson-parameters-31-jul-2022.xlsx"">Smith-Wilson extrapolation parameters as of 31 July 2022<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-fs-pod-and-cod-31-jul-2022.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 July 2022<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""055dfce8c0c8431bacf46550b5c56503"">
+<p><strong>June 2022</strong></p>
+<p>Published 8 July 2022</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-curves-30-jun-2022.xlsx"">Risk-free curves as of 30 June 2022<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-va-portfolios-30-jun-2022.xlsx"">Risk-free Volatility Adjustment portfolios as of 30 June 2022<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-smith-wilson-parameters-30-jun-2022.xlsx"">Smith-Wilson extrapolation parameters as of 30 June 2022<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-fs-pod-and-cod-30-jun-2022.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 30 June 2022<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""cf69226ad85f4374b3a186c349dd3434"">
+<p><strong>May 2022</strong></p>
+<p>Published 10 June 2022</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-curves-31-may-2022.xlsx"">Risk-free curves as of 31 May 2022<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-va-portfolios-31-may-2022.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 May 2022<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-smith-wilson-parameters-31-may-2022.xlsx"">Smith-Wilson extrapolation parameters as of 31 May 2022<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-fs-pod-and-cod-31-may-2022.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 May 2022<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""4578a0f0432041e688d910ad635e641f"">
+<p><strong>April 2022</strong></p>
+<p>Published 11 May 2022</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-curves-30-apr-2022.xlsx"">Risk-free curves as of 30 April 2022<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-va-portfolios-30-apr-2022.xlsx"">Risk-free Volatility Adjustment portfolios as of 30 April 2022 <span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-smith-wilson-parameters-30-apr-2022.xlsx"">Smith-Wilson extrapolation parameters as of 30 April 2022 <span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-fs-pod-and-cod-30-apr-2022.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 30 April 2022 <span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""d34ff0eabb58434c9cdaf0b3f3a6ba2d"">
+<p><strong>March 2022</strong></p>
+<p>Published on 8 April 2022</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-curves-31-mar-2022.xlsx"">Risk-free curves as of 31 March 2022<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-va-portfolios-31-mar-2022.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 March 2022<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-smith-wilson-parameters-31-mar-2022.xlsx"">Smith-Wilson extrapolation parameters as of 31 March 2022<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-fs-pod-and-cod-31-mar-2022.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 March 2022<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""0b96c18402a64495a3aca95414564f12"">
+<p><strong>February 2022</strong></p>
+<p>Published on 8 March 2022</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2022/risk-free-curves-28-feb-2022.xlsx"">Risk-free curves as of 28 February 2022<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-va-portfolios-28-feb-2022.xlsx"">Risk-free Volatility Adjustment portfolios as of 28 February 2022<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-smith-wilson-parameters-28-feb-2022.xlsx"">Smith-Wilson extrapolation parameters as of 28 February 2022<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-fs-pod-and-cod-28-feb-2022.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 28 February 2022<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""a49b8fd720c34172bfa6a066dd6e843c"">
+<p><strong>January 2022</strong></p>
+<p>Published on 8 February 2022</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-curves-31-jan-2022.xlsx"">Risk-free curves as of 31 January 2022<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-va-portfolios-31-jan-2022.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 January 2022<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-smith-wilson-parameters-31-jan-2022.xlsx"">Smith-Wilson extrapolation parameters as of 31 January 2022<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-fs-pod-and-cod-31-jan-2022.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 January 2022<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<div class=""accordion-head"">
+<h3>
+<button class=""accordion-button"">
+                                2021<span class=""accordion-toggle""></span>
+</button>
+</h3>
+</div>
+<div class=""accordion-content"">
+<div class=""content-block"">
+<div class=""page-content"" data-id=""27295a6451d542c48e464366709fda71"">
+<p><strong>December 2021</strong></p>
+<p>Published 12 January 2022</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-curves-31-dec-2021.xlsx"">Risk-free curves as of 31 December 2021<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-va-portfolios-31-dec-2021.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 December 2021<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-smith-wilson-parameters-31-dec-2021.xlsx"">Smith-Wilson extrapolation parameters as of 31 December 2021<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-fs-pod-and-cod-31-dec-2021.xlsx"">Risk-free Fundamental Spreads, Probability of Default, and Cost of Downgrade as of 31 December 2021<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""1defea0173ae4a4c81ddd6b4739ed64b"">
+<p><strong>November 2021</strong></p>
+<p>Published 9 December 2021</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-curves-30-nov-2021.xlsx"">Risk-free curves as of 30 November 2021<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-va-portfolios-30-nov-2021.xlsx"">Risk-free Volatility Adjustment portfolios as of 30 November 2021<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-smith-wilson-parameters-30-nov-2021.xlsx"">Smith-Wilson extrapolation parameters as of 30 November 2021<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-fs-pod-and-cod-30-nov-2021.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 30 November 2021<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""8a530e41d224459685e99800cee05522"">
+<p><strong>October 2021</strong></p>
+<p>Published 10 November 2021</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-curves-31-oct-2021.xlsx"">Risk-free curves as of 31 October 2021<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-va-portfolios-31-oct-2021.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 October 2021<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-smith-wilson-parameters-31-oct-2021.xlsx"">Smith-Wilson extrapolation parameters as of 31 October 2021<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-fs-pod-and-cod-31-oct-2021.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 October 2021<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""1c4674ec6c134b21ba42c115b02aec82"">
+<p><strong>September 2021</strong></p>
+<p>Published 11 October 2021</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-curves-30-sept-2021.xlsx"">Risk-free curves as of 30 September 2021<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-va-portfolios-30-sept-2021.xlsx"">Risk-free Volatility Adjustment portfolios as of 30 September 2021<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-smith-wilson-parameters-30-sept-2021.xlsx"">Smith-Wilson extrapolation parameters as of 30 September 2021<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-fs-pod-and-cod-30-sept-2021.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 30 September 2021<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""f03b15a19bd74dd8880ed1ac156079f8"">
+<p><strong>August 2021</strong></p>
+<p>Published 9 September 2021</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-curves-31-aug-2021.xlsx"">Risk-free curves as of 31 August 2021<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-va-portfolios-31-aug-2021.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 August 2021<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-smith-wilson-parameters-31-aug-2021.xlsx"">Smith-Wilson extrapolation parameters as of 31 August 2021<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-fs-pod-and-cod-31-aug-2021.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 August 2021<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""7470008eceb84b448459b27318d1997c"">
+<p><strong>July 2021</strong></p>
+<p>Published 10 August 2021</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-curves-31-july-2021.xlsx"">Risk-free curves as of 31 July 2021<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-va-portfolios-31-july-2021.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 July 2021<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-smith-wilson-parameters-31-july-2021.xlsx"">Smith-Wilson extrapolation parameters as of 31 July 2021<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-fs-pod-and-cod-31-july-2021.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 July 2021<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""09aa21e52c0a460c9e40d73e1adf780c"">
+<p><strong>June 2021</strong></p>
+<p>Published 9 July 2021</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-curves-30-june-2021.xlsx"">Risk-free curves as of 30 June 2021<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-va-portfolios-30-june-2021.xlsx"">Risk-free Volatility Adjustment portfolios as of 30 June 2021<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-smith-wilson-parameters-30-june-2021.xlsx"">Smith-Wilson extrapolation parameters as of 30 June 2021<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-fs-pod-and-cod-30-june-2021.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 30 June 2021<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""dca9f6b7ccc744e28ec9303ea084ab3d"">
+<p><strong>May 2021</strong></p>
+<p>Published 9 June 2021</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-curves-31-may-2021.xlsx"">Risk-free curves as of 31 May 2021 <span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-va-portfolios-31-may-2021.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 May 2021 <span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-smith-wilson-parameters-31-may-2021.xlsx"">Smith-Wilson extrapolation parameters as of 31 May 2021 <span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-fs-pod-and-cod-31-may-2021.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 May 2021 <span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""75878c506635431596b181f1993bbab2"">
+<p><strong>April 2021</strong></p>
+<p>Published 11 May 2021</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-curves-30-april-2021.xlsx"">Risk-free curves as of 30 April 2021 <span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-va-portfolios-30-april-2021.xlsx"">Risk-free Volatility Adjustment portfolios as of 30 April 2021 <span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-smith-wilson-parameters-30-april-2021.xlsx"">Smith-Wilson extrapolation parameters as of 30 April 2021 <span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-fs-pod-and-cod-30-april-2021.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 30 April 2021 <span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""b14705840b234589953fedfb248da9a9"">
+<p><strong>March 2021</strong></p>
+<p>Published 13 April 2021</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-curves-31-march-2021.xlsx"">Risk-free curves as of 31 March 2021 <span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-va-portfolios-31-march-2021.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 March 2021 <span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-smith-wilson-parameters-31-march-2021.xlsx"">Smith-Wilson extrapolation parameters as of 31 March 2021 <span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-fs-pod-and-cod-31-march-2021.xlsx"">Risk-free Fundamental Spreads, Probability of Default and Cost of Downgrade as of 31 March 2021 <span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""00b6dcdcefc74bfe859bd261402a1c58"">
+<p><strong>February 2021</strong></p>
+<p>Published 8 March 2021</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-curves-28-february-2021.xlsx"">Risk-free curves as of 28 February 2021<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-va-portfolios-28-february-2021.xlsx"">Risk-free Volatility Adjustment portfolios as of 28 February 2021<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-smith-wilson-parameters-28-february-2021.xlsx"">Smith-Wilson extrapolation parameters as of 28 February 2021<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-fs-pod-and-cod-28-february-2021.xlsx"">Risk-free Fundamental Spreads, Probability of Default, and Cost of Downgrade as of 28 February 2021<span> (XLSX 2MB)</span></a></li>
+</ul>
+</div>
+<div class=""content-block"">
+<div class=""page-content"" data-id=""7cab1b6f94a049a9841f84ce5e0f0388"">
+<p><strong>January 2021</strong></p>
+<p>Published 8 February 2021</p>
+</div>
+</div>
+<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-curves-31-january-2021.xlsx"">Risk-free curves as of 31 January 2021<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-va-portfolios-31-january-2021.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 January 2021<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-smith-wilson-parameters-31-january-2021.xlsx"">Smith-Wilson extrapolation parameters as of 31 January 2021<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/rfr-releases-2021/risk-free-fs-pod-and-cod-31-january-2021.xlsx"">Risk-free Fundamental Spreads, Probability of Default, and Cost of Downgrade as of 31 January 2021<span> (XLSX 2MB)</span></a></li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<div class=""accordion-head"">
+<h3>
+<button class=""accordion-button"">
+                                December 2020<span class=""accordion-toggle""></span>
+</button>
+</h3>
+</div>
+<div class=""accordion-content"">
+							Published 13 January 2021
+
+	                        
+
+		<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-curves-31-december-2020.xlsx"">Risk-free curves as of 31 December 2020<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-va-portfolios-31-december-2020.xlsx"">Risk-free Volatility Adjustment portfolios as of 31 December 2020<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-term-structures-31-december-2020.xlsx"">Smith-Wilson extrapolation parameters as of 31 December 2020<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/risk-free-fs-pod-and-cod-31-december-2020.xlsx"">Risk-free Fundamental Spreads, Probability of Default, and Cost of Downgrade as of 31 December 2020<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class=""clear""></div>
+</div>
+</section>
+<section class=""page-section"">
+<div class=""container"">
+<div class=""col9"">
+<div class=""content-block"">
+<div class=""page-content"" data-id=""e2d932acb7dd49dab81096f6a1b79983"">
+<h2>Indicative SONIA-based technical information</h2>
+<p>As noted in <a href=""/prudential-regulation/publication/2021/january/solvency-ii-deep-liquid-and-transparent-assessments-gbp-transition-to-sonia"">PS12/21 ‘Solvency II: Deep, liquid and transparent assessments, and GBP transition to SONIA’</a>, we have published indicative GBP technical information (TI) packages based on SONIA OIS with a reference date of 31 May 2021 (for the May 2021 package) and 30 June 2021 (for the June 2021 package). The publication of this information is intended to assist firms in analysing differences arising from our transition to SONIA-based TI. <strong>For the avoidance of doubt, firms should not use this indicative GBP TI for the purposes of complying with their Solvency II requirements, and firms’ mid-year Solvency II balance sheets will be based on GBP Libor</strong>.  The applicable GBP TI (for all relevant reference dates) can be found as usual, in the ‘Monthly RFR releases’ section above. We have published indicative GBP TI based on SONIA OIS for May 2021 and June 2021, but will not be publishing further indicative rates as SONIA OIS will be the default basis from July 2021 onwards.</p>
+<p>Background to the SONIA-based TI can be found in this <a href=""/-/media/boe/files/prudential-regulation/solvency-ii/sonia_based_ti_additional_information_jun_2021.pdf"" target=""_blank"">additional information</a> pack.</p>
+<div> </div>
+</div>
+</div>
+<ul class=""accordion"">
+<li>
+<div class=""accordion-head"">
+<h3>
+<button class=""accordion-button"">
+                                SONIA-based risk-free rates June 2021<span class=""accordion-toggle""></span>
+</button>
+</h3>
+</div>
+<div class=""accordion-content"">
+							 Published 23 July 2021
+
+	                        
+
+		<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/sonia-indicative-risk-free-curves-30-jun-2021.xlsx"">Indicative SONIA TI: Risk-free curves as of 30 June 2021<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/sonia-indicative-risk-free-va-portfolios-30-jun-2021.xlsx"">Indicative SONIA TI: Risk-free Volatility Adjustment portfolios as of 30 June 2021<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/sonia-indicative-risk-free-smith-wilson-parameters-30-jun-2021.xlsx"">Indicative SONIA TI: Smith-Wilson extrapolation parameters as of 30 June 2021<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/sonia-indicative-risk-free-fs-pod-and-cod-30-jun-2021.xlsx"">Indicative SONIA TI: Risk-free Fundamental Spreads, Probability of Default, and Cost of Downgrade output as of 30 June 2021<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+</div>
+</li>
+<li>
+<div class=""accordion-head"">
+<h3>
+<button class=""accordion-button"">
+                                SONIA-based risk-free rates May 2021<span class=""accordion-toggle""></span>
+</button>
+</h3>
+</div>
+<div class=""accordion-content"">
+							 Published 23 June 2021
+
+	                        
+
+		<div class=""content-block"">
+<ul class=""list-links"">
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/sonia-indicative-risk-free-curves-31-may-2021.xlsx"">Indicative SONIA TI: Risk-free curves as of 31 May 2021<span> (XLSX 1.2MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/sonia-indicative-risk-free-va-portfolios-31-may-2021.xlsx"">Indicative SONIA TI: Risk-free Volatility Adjustment portfolios as of 31 May 2021<span> (XLSX 0.9MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/sonia-indicative-risk-free-smith-wilson-parameters-31-may-2021.xlsx"">Indicative SONIA TI: Smith-Wilson extrapolation parameters as of 31 May 2021<span> (XLSX 1.1MB)</span></a></li>
+<li class=""list-links__item""><a class=""list-links__link icon-download"" href=""/-/media/boe/files/prudential-regulation/solvency-ii/sonia-indicative-risk-free-fs-pod-and-cod-31-may-2021.xlsx"">Indicative SONIA TI: Risk-free Fundamental Spreads, Probability of Default, and Cost of Downgrade output as of 31 May 2021<span> (XLSX 1.9MB)</span></a></li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<div class=""clear""></div>
+</div>
+</section> <section class=""page-section page-section--last"">
+<div class=""container"">
+<div class=""col12"">
+<p class=""txtr"">
+<a class=""scroll-to-top"" href=""#"">Back to top</a>
+</p>
+</div>
+</div>
+</section>
+<section class=""page-section-survey"">
+<div class=""container"">
+<div class=""col12"">
+<div class=""page-survey"">
+<div class=""page-last-updated"">This page was last updated 09 January 2024</div>
+<div class=""page-survey-survey"">
+<h2 class=""visually-hidden exclude-navigation"">Give your feedback</h2>
+<iframe class=""page-survey-iframe"" frameborder=""0"" id=""pageSurvey38bec9dcada447f7ae9331f1fc028047"" src=""/forms/page-survey-page?path=%2fsitecore%2fcontent%2fBoE%2fHome%2fprudential-regulation%2fkey-initiatives%2fsolvency-ii%2ftechnical-information&amp;id=pageSurvey38bec9dcada447f7ae9331f1fc028047"" title=""Page Survey""></iframe>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div class=""clear""></div>
+<footer class=""global-footer"" itemscope="""" itemtype=""http://schema.org/WPFooter"">
+<div class=""container"">
+<div class=""grid"">
+<div class=""grid__col col-desk--1-5 col-lap--1-2"">
+<div class=""footer-social-bank"">
+<ul class=""accordion"" data-accordion-mobile="""">
+<li>
+<div class=""accordion-head"">
+<h3 class=""exclude-navigation"">
+<span class=""display-lap-desk"">Follow us</span>
+<button class=""accordion-button"">
+									Follow us
+									<span class=""accordion-toggle""></span>
+</button>
+</h3>
+</div>
+<div class=""accordion-content"">
+<div class=""footer-social-bank"">
+<ul class=""social-links"">
+<li class=""social-item"">
+<a class=""social-link"" href=""https://twitter.com/bankofengland"" target=""_blank"" title=""Opens in a new window"">
+<span class=""icon-twitter-bird""></span>
+<span class=""si-text"">Follow us on Twitter</span>
+</a>
+</li>
+<li class=""social-item"">
+<a class=""social-link"" href=""https://www.linkedin.com/company/bank-of-england/"" target=""_blank"" title=""Opens in a new window"">
+<span class=""icon-linkedin""></span>
+<span class=""si-text"">Connect with us on LinkedIn</span>
+</a>
+</li>
+<li class=""social-item"">
+<a class=""social-link"" href=""https://www.facebook.com/bankofengland.co.uk"" target=""_blank"" title=""Opens in a new window"">
+<span class=""icon-facebook""></span>
+<span class=""si-text"">Add us on Facebook</span>
+</a>
+</li>
+<li class=""social-item"">
+<a class=""social-link"" href=""https://www.instagram.com/bankofengland.uk/ "" target=""_blank"">
+<span class=""icon-instagram""></span>
+<span class=""si-text"">Follow us on Instagram</span>
+</a>
+</li>
+<li class=""social-item"">
+<a class=""social-link"" href=""https://www.youtube.com/user/bankofenglanduk"" target=""_blank"" title=""Opens in a new window"">
+<span class=""icon-youtube-play""></span>
+<span class=""si-text"">Watch us on Youtube</span>
+</a>
+</li>
+<li class=""social-item"">
+<a class=""social-link"" href=""https://www.flickr.com/photos/bankofengland/albums"" target=""_blank"" title=""Opens in a new window"">
+<span class=""icon-flickr""></span>
+<span class=""si-text"">Find us on Flickr</span>
+</a>
+</li>
+</ul>
+</div>
+<div class=""footer-social-bank"">
+<h3 class=""exclude-navigation"">Museum</h3>
+<ul class=""social-links"">
+<li class=""social-item"">
+<a class=""social-link"" href=""https://www.facebook.com/boemuseum"" target=""_blank"" title=""Opens in a new window"">
+<span class=""icon-facebook""></span>
+<span class=""si-text"">Like the Bank of England museum on Facebook</span>
+</a>
+</li>
+<li class=""social-item"">
+<a class=""social-link"" href=""https://twitter.com/boemuseum"" target=""_blank"" title=""Opens in a new window"">
+<span class=""icon-twitter-bird""></span>
+<span class=""si-text"">Follow the Bank of England museum on Twitter</span>
+</a>
+</li>
+<li class=""social-item"">
+<a class=""social-link"" href=""https://instagram.com/boemuseum"" target=""_blank"" title=""Opens in a new window"">
+<span class=""icon-instagram""></span>
+<span class=""si-text"">Follow the Bank of England museum on Instagram</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class=""grid__col col-desk--1-5 col-lap--1-2"">
+<div class=""footer-topics"">
+<ul class=""accordion"" data-accordion-mobile="""">
+<li>
+<div class=""accordion-head"">
+<h3 class=""exclude-navigation"">
+<span class=""display-lap-desk"">Browse topics</span>
+<button class=""accordion-button"">Browse topics<span class=""accordion-toggle""></span></button>
+</h3>
+</div>
+<div class=""accordion-content"">
+<ul class=""footer-links"">
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/banknotes"">
+                                    Banknotes
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/careers"">
+                                    Careers
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/the-digital-pound"">
+                                    Digital pound
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/education"">
+                                    Education
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/financial-stability"">
+                                    Financial stability
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/gold"">
+                                    Gold
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/markets"">
+                                    Markets
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/monetary-policy"">
+                                    Monetary policy
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/payment-and-settlement"">
+                                    Payment and settlement
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/prudential-regulation"">
+                                    Prudential regulation
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/research"">
+                                    Research
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/statistics"">
+                                    Statistics
+                                </a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class=""grid__col col-desk--1-5 col-lap--1-2"">
+<div class=""footer-topics"">
+<ul class=""accordion"" data-accordion-mobile="""">
+<li>
+<div class=""accordion-head"">
+<h3 class=""exclude-navigation"">
+<span class=""display-lap-desk"">Useful links</span>
+<button class=""accordion-button"">Useful links<span class=""accordion-toggle""></span></button>
+</h3>
+</div>
+<div class=""accordion-content"">
+<ul class=""footer-links"">
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/about"">
+                                    About us
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/archive"">
+                                    Archive
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/contact"">
+                                    Contact us
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/explainers"">
+                                    Explainers
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/faq"">
+                                    FAQs
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/freedom-of-information"">
+                                    Freedom of Information
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/glossary"">
+                                    Glossary
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/museum"">
+                                    Museum
+                                </a>
+</li>
+<li class=""footer-item"">
+<a class=""footer-link"" href=""/subscribe-to-emails"">
+                                    Subscribe to emails
+                                </a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class=""grid__col col-desk--1-5 col-lap--1-2"">
+<div class=""footer-contact"">
+<h3 class=""exclude-navigation"">Bank of England</h3>
+<ul class=""footer-contact-info"">
+<li class=""footer-address"">Threadneedle Street, London, EC2R 8AH</li>
+<li class=""footer-tel"">Switchboard: <a class=""footer-tel-link"" href=""tel://00442034614444"" target=""_blank"" title=""Switchboard"">+44(0)20 3461 4444</a></li>
+<li class=""footer-tel"">Enquiries: <a class=""footer-tel-link"" href=""tel://00442034614878"" target=""_blank"" title=""Enquiries"">+44(0)20 3461 4878</a></li>
+</ul>
+<h3 class=""exclude-navigation"">Bank of England Museum</h3>
+<ul class=""footer-contact-info"">
+<li class=""footer-address"">Bartholomew Lane, London, EC2R 8AH</li>
+</ul>
+</div>
+</div>
+<div class=""grid__col col-desk--1-5"">
+<div class=""container-seal"">
+<a class=""footer-logo"" href=""/""><img alt=""Bank of England home"" height=""50"" src=""/-/media/boe/images/logo/footer-logo.svg?h=50&amp;iar=0&amp;mh=50&amp;mw=240&amp;w=50&amp;hash=21937D63AC8E857977043CB73AE10F74"" width=""50""/></a>
+</div>
+</div>
+</div>
+</div>
+<div class=""footer-copyright"">
+<div class=""container"">
+<div class=""col12"">
+<ul class=""list-inline"">
+<li class=""list-inline__item"">
+<a class=""list-inline__link"" href=""/accessibility"">
+				    Accessibility statement
+			    </a>
+</li>
+<li class=""list-inline__item"">
+<a class=""list-inline__link"" href=""/legal/privacy-and-cookie-policy"">
+				    Cookies
+			    </a>
+</li>
+<li class=""list-inline__item"">
+<a class=""list-inline__link"" href=""/about/gymraeg"">
+				    Cymraeg
+			    </a>
+</li>
+<li class=""list-inline__item"">
+<a class=""list-inline__link"" href=""/legal"">
+				    Legal
+			    </a>
+</li>
+<li class=""list-inline__item"">
+<a class=""list-inline__link"" href=""/legal/privacy"">
+				    Privacy
+			    </a>
+</li>
+<li class=""list-inline__item"">
+<a class=""list-inline__link"" href=""/sitemap"">
+				    Sitemap
+			    </a>
+</li>
+</ul>
+<p class=""text-copyright"">©2024 Bank of England </p>
+</div>
+</div>
+</div>
+</footer>
+<script src=""/scripts/boe.vendor.min.js?ver=0"" type=""text/javascript""></script>
+<script src=""/scripts/boe.min.js?ver=0"" type=""text/javascript""></script>
+<script src=""/-/media/css/search-bundle-script.js?ver=0""></script>
+<script>
+			var cludo_engineId = 9479; //Engine ID
+			var cludo_language = 'en'; //Language
+			var cludo_searchUrl = 'https://www.bankofengland.co.uk/search'; //Search URL
+		</script>
+<script src=""/-/media/css/search-new-js.js?ver=0""></script>
+</div>
+</body>
+</html>"
