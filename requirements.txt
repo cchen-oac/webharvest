@@ -1,5 +1,14 @@
-altair
 numpy
 pandas
 pydeck
 streamlit
+scikit-learn
+datetime
+requests
+beautifulsoup4==4.12.2
+RegEx
+matplotlib
+urllib
+openpyxl
+zipfile
+io
