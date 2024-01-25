@@ -8,7 +8,7 @@ requests
 beautifulsoup4==4.12.2
 RegEx
 matplotlib
-urllib
+urllib3
 openpyxl
 zipfile
 io

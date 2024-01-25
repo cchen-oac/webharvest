@@ -12,17 +12,18 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# %%
+
 import streamlit as st
 from streamlit.logger import get_logger
 import matplotlib.pyplot as plt
 import pandas as pd
-import urllib.request as url
+#import urllib.request as url
 from bs4 import BeautifulSoup
 import openpyxl
 from zipfile import ZipFile
 import requests
 from io import BytesIO
+import re
 
 ##Defining functions
 #Check that the website is allowed for acces
@@ -73,7 +74,10 @@ def load_dataset(html):
     #links_df = pd.DataFrame({'links':links_csv}).sort_values(by=['links'])  
     return df
 
-
+def group_files(df):
+    for index, row in df.iterrows():
+        matches = re.findall(r'\.(\w+)', row['hrefs'])
+        print(matches)
 
 dict = {'names': names, 'hrefs': hrefs}
 df = pd.DataFrame(dict)     
