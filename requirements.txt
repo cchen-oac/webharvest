@@ -10,5 +10,4 @@ RegEx
 matplotlib
 urllib3
 openpyxl
-zipfile
 io
