@@ -121,6 +121,14 @@ def data_manipulate(myrange1):
         myrange1[key] = filtered_df
     return myrange1
 
+def plot_chart(filtered_df1, chart_name, site1):
+    plt.clf()
+    plt.suptitle(chart_name ,fontsize=15)
+    plt.title("Source: "+site1 ,fontsize=8)
+    plt.xticks(rotation=30, ha='right')
+    plt.plot(filtered_df1['Date'],filtered_df1['SymAdj'],label='PRA')
+    plt.legend()
+    return plt
     
     
 
@@ -151,12 +159,13 @@ if url:
 
   # Display the selected rows
   #st.write('### Selected Rows')
-  st.dataframe(selected_rows)
+  #st.dataframe(selected_rows)
   downloaded_data = get_data(selected_rows, "Calculations")###Need to add option to select sheets
   downloaded_data2 = data_manipulate(downloaded_data)
   for name, df in downloaded_data2.items():
-    st.write(f"### {name}")
-    st.table(df)
+    #st.write(f"### {name}")
+    #st.table(df)
+    st.pyplot(plot_chart(df, selected_names, selected_rows['hrefs']))
 
 else:
     # The user has not inputted a URL    
