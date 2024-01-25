@@ -14,38 +14,32 @@
 
 import streamlit as st
 from streamlit.logger import get_logger
+import matplotlib.pyplot as plt
+import pandas as pd
+import urllib.request as url
+from bs4 import BeautifulSoup as soup
+import openpyxl
+from zipfile import ZipFile
+import requests
+from io import BytesIO
 
-LOGGER = get_logger(__name__)
-
-
-def run():
-    st.set_page_config(
-        page_title="Hello",
-        page_icon="👋",
-    )
-
-    st.write("# Welcome to Streamlit! 👋")
-
-    st.sidebar.success("Select a demo above.")
-
-    st.markdown(
-        """
-        Streamlit is an open-source app framework built specifically for
-        Machine Learning and Data Science projects.
-        **👈 Select a demo from the sidebar** to see some examples
-        of what Streamlit can do!
-        ### Want to learn more?
-        - Check out [streamlit.io](https://streamlit.io)
-        - Jump into our [documentation](https://docs.streamlit.io)
-        - Ask a question in our [community
-          forums](https://discuss.streamlit.io)
-        ### See more complex demos
-        - Use a neural net to [analyze the Udacity Self-driving Car Image
-          Dataset](https://github.com/streamlit/demo-self-driving)
-        - Explore a [New York City rideshare dataset](https://github.com/streamlit/demo-uber-nyc-pickups)
-    """
-    )
-
-
-if __name__ == "__main__":
-    run()
+##Defining functions
+#Check that the website is allowed for acces
+#<Response [200]>#means able to access
+#url = "https://www.bankofengland.co.uk/prudential-regulation/key-initiatives/solvency-ii/technical-information"
+@st.cache_data
+def check_acess(url):
+    #Initially access was denied without using hdr settings, set up below setting for access
+    hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (Kpng, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
+    'Accept': 'text/png,application/xpng+xml,application/xml;q=0.9,*/*;q=0.8',
+    'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
+    'Accept-Encoding': 'none',
+    'Accept-Language': 'en-US,en;q=0.8',
+    'Connection': 'keep-alive'}
+    response = requests.get(url, headers=hdr)
+    if response.status_code == 200:
+        notification = "Access to URL is granted!"
+    else:
+        notification = "Access to URL is denied!, please input a different link!"
+    return notification    
+                  
