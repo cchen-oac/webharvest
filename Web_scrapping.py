@@ -47,29 +47,37 @@ def check_acess(url):
 
 #Load all available csv from url and list out all dataset names
 @st.cache_data
-def load_dataset(html):
+def load_dataset(url):
     html = requests.get(url)    
     #parse html info
     soup = BeautifulSoup(html.text, 'html.parser')
-
     #list of file extensions interested in
     file_extensions = ['.xlsx', '.csv', '.pdf']
-
     #extract all links available from html and their names
     names = []
     hrefs = []
     for i in soup.find_all('a'):
         link = i.get('href')
-        name = i.text.strip()  # remove leading/trailing white spaces
         if link and any(link.endswith(ext) for ext in file_extensions):    # Only add link and name to the list if link is not None and ends with any of the file extensions
+            if not link.startswith('https'):
+                link = url + link   
+            name = i.text.strip()  # remove leading/trailing white spaces
             names.append(name)
             hrefs.append(link)
 
     #Combine both name and refs as dictionary
-    dict = {'names': names, 'hrefs': hrefs}
-    df = pd.DataFrame(dict).sort_values(by=['names']).reset_index(drop=True)
+    dict = {'Name': names, 'hrefs': hrefs}
+    df = pd.DataFrame(dict).sort_values(by=['Name']).reset_index(drop=True)
     return df
 
+#Display the available file names
+@st.cache_data
+def display_dataset(df):
+    dataset_name = df['Name']
+    return dataset_name
+
+#User can select the file types
+@st.cache_data
 def group_files(df):
 # Loop through rows of dataframe
     file_extension = []
@@ -79,11 +87,26 @@ def group_files(df):
     file_extension = pd.DataFrame(file_extension).drop_duplicates()
     return(file_extension)
 
+#Download the selected file
+@st.cache_data
+def get_data(selected_rows):
+    # Save the dataset as a dictionary
+    downloaded_data = {}
+    for Name in selected_rows['Name']:
+        file_url = selected_rows.loc[selected_rows['Name'] == Name, 'hrefs'].values[0]
+        downloaded_data[Name] = pd.read_csv(file_url, low_memory=False)
+
+    return downloaded_data
 
 
 
+####App
+##Title
+st.header("Economic indicator automation")
 
-
+##User Input
+#User can input a link
+url = st.text_input('URL:')
 
 #Display whether we can webscrap from this link
 if url:
@@ -106,3 +129,9 @@ if url:
 else:
     # The user has not inputted a URL    
   st.write("Please input an URL above")
+
+
+""" dict = {'names': names, 'hrefs': hrefs}
+df = pd.DataFrame(dict)     
+# saving the dataframe
+df.to_csv('test.csv')   """
