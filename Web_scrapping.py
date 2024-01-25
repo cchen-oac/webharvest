@@ -110,7 +110,18 @@ def get_data(selected_rows, tab_name):
 
     return downloaded_data
 
- 
+@st.cache_data
+def data_manipulate(myrange1):
+    for key, df in myrange1.items():
+        df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
+        df = df.iloc[1: , :]
+        df.reset_index(drop=True,inplace = True)
+        df.rename(columns={"Dampener final": "SymAdj"},inplace = True)
+        df['Date'] = pd.to_datetime(df['Calendar day'], format='%d.%m.%Y')
+        filtered_df = df.loc[(df['Date'] >= '2020-12-30')]
+        myrange1[key] = filtered_df
+    return myrange1
+
     
     
 
@@ -142,13 +153,11 @@ if url:
   # Display the selected rows
   #st.write('### Selected Rows')
   st.dataframe(selected_rows)
-  downloaded_data = get_data(selected_rows, "Calculations")
-  for name, data in downloaded_data.items():
+  downloaded_data = get_data(selected_rows, "Calculations")###Need to add option to select sheets
+  downloaded_data2 = data_manipulate(downloaded_data)
+  for name, df in downloaded_data2.items():
     st.write(f"### {name}")
-    st.table(data)
-    st.table(downloaded_data)
-  
-  #st.table(plot_chart(downloaded_data))
+    st.table(df)
 
 else:
     # The user has not inputted a URL    
