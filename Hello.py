@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
+#Import libraries
 import streamlit as st
 from streamlit.logger import get_logger
 import matplotlib.pyplot as plt
@@ -24,6 +24,7 @@ from zipfile import ZipFile
 import requests
 from io import BytesIO
 import re
+from openpyxl import load_workbook
 
 ##Defining functions
 #Check that the website is allowed for acces
@@ -88,39 +89,82 @@ def group_files(df):
 
 #Download the selected file
 @st.cache_data
-def get_data(selected_rows, tab_name):
-    # Save the dataset as a dictionary
+def get_file_type(file_url):
+    return file_url.rsplit('.', 1)[-1] #Extact file suffix to get file types, use regex backward
+
+def read_file(file_url, tab_name, rows):
+    extension = get_file_type(file_url)
+    if extension == 'csv':
+        return pd.read_csv(file_url, low_memory=False)
+    elif extension == 'xlsx':
+        return pd.read_excel(file_url, tab_name, skiprows=rows)
+    elif extension == 'pdf':
+        # Process PDF files
+        # need a library like PyPDF2 or PDFMiner to read PDF files
+        pass
+    else:
+        print(f'Unsupported file type: {extension}')
+        return None
+
+@st.cache_data
+def print_tab_names(file_paths):
+    tab_names = []
+    for file_path in file_paths:
+        xls = pd.ExcelFile(file_path)
+        tab_names.extend(xls.sheet_names)
+    return tab_names
+    
+    
+def get_data(selected_rows, tab_name, rows):
     downloaded_data = {}
+    for Name in selected_rows['Name']:
+        file_url = selected_rows.loc[selected_rows['Name'] == Name, 'hrefs'].values[0]
+        downloaded_data[Name] = read_file(file_url, tab_name, rows)
+    return downloaded_data
+
+#manipulate data   
+@st.cache_data
+def data_manipulate(myrange1):
+    #data is saved as a dictionary, so need to loop through each dataframe
+    for key, df in myrange1.items():
+        df = df.loc[:, ~df.columns.str.contains('^Unnamed')] #remove unnamed columns
+        df = df.iloc[1: , :] #remove first row #######This will need chaning depending on the file layout#######
+        df.reset_index(drop=True,inplace = True)
+        df.rename(columns={"Dampener final": "SymAdj"},inplace = True) #rename column ####This needs changing as well########
+        df['Date'] = pd.to_datetime(df['Calendar day'], format='%d.%m.%Y') 
+        filtered_df = df.loc[(df['Date'] >= '2020-12-30')] #this also needs changing    
+        myrange1[key] = filtered_df
+    return myrange1
+
+@st.cache_data
+def get_tab_names():
+    # Save the dataset as a dictionary
+    sheets_data = {}
     for Name in selected_rows['Name']:
         file_url = selected_rows.loc[selected_rows['Name'] == Name, 'hrefs'].values[0]
         extension = file_url.rsplit('.', 1)[-1]
         
         #Adjust method when opening different file type
-        if extension == 'csv':
-            downloaded_data[Name] = pd.read_csv(file_url, low_memory=False)
-        elif extension == 'xlsx':
-            downloaded_data[Name] = pd.read_excel(file_url, tab_name,skiprows=8)#######Need to consider automating table selection##########
-        elif extension == 'pdf':
-            # Process PDF files
-            # You will need a library like PyPDF2 or PDFMiner to read PDF files
-            pass
+        if extension == 'xlsx':
+            sheets_data_data[Name] = xlrd.open_workbook(file_url, on_demand=True)
         else:
-            print(f'Unsupported file type: {extension}')
+            print(f'No sheets found in: {extension}')
+            
+            
+            #****SAME CODE FOR PRA & EIOPA******
+            myrange = myrange.loc[:, ~myrange.columns.str.contains('^Unnamed')]
+            myrange = myrange.iloc[8: , :]
+            myrange.reset_index(drop=True,inplace = True)
+            myrange.rename(columns={"Main menu": "Term"},inplace = True)
+            myrange = myrange.astype('float')
+            myrange = myrange.astype({'Term': 'int32'})
+            myrange['Date'] = mydate
 
-    return downloaded_data
 
+
+
+#Plot chart
 @st.cache_data
-def data_manipulate(myrange1):
-    for key, df in myrange1.items():
-        df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
-        df = df.iloc[1: , :]
-        df.reset_index(drop=True,inplace = True)
-        df.rename(columns={"Dampener final": "SymAdj"},inplace = True)
-        df['Date'] = pd.to_datetime(df['Calendar day'], format='%d.%m.%Y')
-        filtered_df = df.loc[(df['Date'] >= '2020-12-30')]
-        myrange1[key] = filtered_df
-    return myrange1
-
 def plot_chart(filtered_df1, chart_name, site1):
     plt.clf()
     plt.suptitle(chart_name ,fontsize=15)
@@ -147,25 +191,29 @@ if url:
   st.write(check_acess(url))
   full_df = load_dataset(url)
   df_names = pd.DataFrame(display_dataset(full_df))
-  file_types = group_files(full_df)
+
 
   # Let the user select from the dataframe indices
   selected_names = st.multiselect('Select rows:', full_df.Name)
   selected_rows = full_df[full_df['Name'].isin(selected_names)]
-  
+  tab_names = print_tab_names(selected_rows['hrefs'])
+  selected_sheet = st.selectbox('Select sheet:', tab_names)
   #file_types = group_files(full_df)
   #selected_types = st.multiselect('Select file type:', file_types)
-
+  data = get_data(selected_rows, selected_sheet, 8)
+  st.write(data)
 
   # Display the selected rows
   #st.write('### Selected Rows')
   #st.dataframe(selected_rows)
-  downloaded_data = get_data(selected_rows, "Calculations")###Need to add option to select sheets
-  downloaded_data2 = data_manipulate(downloaded_data)
-  for name, df in downloaded_data2.items():
+  
+  #skip_rows = st.number_input('Skip rows:')
+  #downloaded_data = get_data(selected_rows, "Calculations", skip_rows)###Need to add option to select sheets
+  #downloaded_data2 = data_manipulate(downloaded_data)
+  #for name, df in downloaded_data2.items():
     #st.write(f"### {name}")
     #st.table(df)
-    st.pyplot(plot_chart(df, selected_names, selected_rows['hrefs']))
+    #st.pyplot(plot_chart(df, selected_names, selected_rows['hrefs']))
 
 else:
     # The user has not inputted a URL    
