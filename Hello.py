@@ -113,14 +113,56 @@ def print_tab_names(file_paths):
         xls = pd.ExcelFile(file_path)
         tab_names.extend(xls.sheet_names)
     return tab_names
-    
-    
+
+#Download the selected sheet data
 def get_data(selected_rows, tab_name, rows):
     downloaded_data = {}
     for Name in selected_rows['Name']:
         file_url = selected_rows.loc[selected_rows['Name'] == Name, 'hrefs'].values[0]
         downloaded_data[Name] = read_file(file_url, tab_name, rows)
     return downloaded_data
+
+
+
+
+def find_largest_nonmissing_block(data):
+    largest_block_data = {}
+    for key, df in data.items():
+        largest_block = ''
+        max_block_size = 0
+        for column in df.columns:
+            # Skip 'Unnamed' columns and columns with all null values
+            if column.startswith('Unnamed') or df[column].isnull().all():
+                continue
+
+            # Drop null values and get the index of the remaining values
+            non_null_indices = df[column].dropna().index
+
+            if not non_null_indices.empty:
+                # Find the largest continuous block of non-missing values
+                blocks = [(start, end) for start, end in zip(non_null_indices, non_null_indices[1:]) if start+1 != end]
+                blocks.append((non_null_indices[-1], non_null_indices[-1]))
+                
+                # Get the largest block
+                largest_block_in_column = max(blocks, key=lambda block: block[1] - block[0])
+                block_size = largest_block_in_column[1] - largest_block_in_column[0]
+
+                # If this block is larger than the largest block so far, update the largest block
+                if block_size > max_block_size:
+                    max_block_size = block_size
+                    # Convert the row indices to Excel-style cell references
+                    min_cell = f'{column}{largest_block_in_column[0] + 1}'
+                    max_cell = f'{column}{largest_block_in_column[1] + 1}'
+                    largest_block = f'{min_cell}:{max_cell}'
+
+        # Store the largest block in the dictionary
+        largest_block_data[key] = largest_block
+    return largest_block_data
+
+
+
+
+
 
 #manipulate data   
 @st.cache_data
@@ -200,10 +242,15 @@ if url:
   selected_sheet = st.selectbox('Select sheet:', tab_names)
   #file_types = group_files(full_df)
   #selected_types = st.multiselect('Select file type:', file_types)
-  data = get_data(selected_rows, selected_sheet, 8)
+  data = get_data(selected_rows, selected_sheet, 0)
   st.write(data)
 
-  # Display the selected rows
+    
+
+  complete_rows = find_largest_nonmissing_block(data)
+  
+  for key, cell_range in complete_rows.items():
+    st.write(f'{key}: {cell_range}')  # Display the selected rows
   #st.write('### Selected Rows')
   #st.dataframe(selected_rows)
   
