@@ -138,40 +138,14 @@ def get_data(selected_rows, tab_name, rows):
 
 
 
-
-def find_largest_nonmissing_block(data):
-    largest_block_data = {}
+@st.cache_data
+def extract_non_missing_rows(data):
+    non_missing_data = {}
     for key, df in data.items():
-        largest_block = ''
-        max_block_size = 0
-        for column in df.columns:
-            # Skip 'Unnamed' columns and columns with all null values
-            if column.startswith('Unnamed') or df[column].isnull().all():
-                continue
-
-            # Drop null values and get the index of the remaining values
-            non_null_indices = df[column].dropna().index
-
-            if not non_null_indices.empty:
-                # Find the largest continuous block of non-missing values
-                blocks = [(start, end) for start, end in zip(non_null_indices, non_null_indices[1:]) if start+1 != end]
-                blocks.append((non_null_indices[-1], non_null_indices[-1]))
-                
-                # Get the largest block
-                largest_block_in_column = max(blocks, key=lambda block: block[1] - block[0])
-                block_size = largest_block_in_column[1] - largest_block_in_column[0]
-
-                # If this block is larger than the largest block so far, update the largest block
-                if block_size > max_block_size:
-                    max_block_size = block_size
-                    # Convert the row indices to Excel-style cell references
-                    min_cell = f'{column}{largest_block_in_column[0] + 1}'
-                    max_cell = f'{column}{largest_block_in_column[1] + 1}'
-                    largest_block = f'{min_cell}:{max_cell}'
-
-        # Store the largest block in the dictionary
-        largest_block_data[key] = largest_block
-    return largest_block_data
+        non_missing_rows = df.dropna(how='all')
+        non_missing_data[key] = non_missing_rows
+        st.table(non_missing_rows)  # Add this line to display the non-missing rows as a table
+    return non_missing_data
 
 
 
@@ -260,13 +234,9 @@ if url:
   #selected_types = st.multiselect('Select file type:', file_types)
   data = get_data(selected_rows, selected_sheet, 0)
   st.write(data)
-
-    
-
-  complete_rows = find_largest_nonmissing_block(data)
-  
-  for key, cell_range in complete_rows.items():
-    st.write(f'{key}: {cell_range}')  # Display the selected rows
+  manipulated_data = extract_non_missing_rows(data)
+  for key, value in manipulated_data.items():
+    st.write(f'{key}: {value}')  # This will display each key-value pair in your dictionary
   #st.write('### Selected Rows')
   #st.dataframe(selected_rows)
   
