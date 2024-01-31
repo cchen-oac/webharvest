@@ -114,12 +114,12 @@ def print_tab_names(file_paths):
         os.remove(file_name)  # remove the file after reading it
     return tab_names
 
-def read_file(file_url):
+def read_file(file_url, tab_name, rows):
     extension = get_file_type(file_url)
     if extension == 'csv':
         return pd.read_csv(file_url, low_memory=False)
     elif extension == 'xlsx':
-        return print_tab_names(file_url)
+        return pd.read_excel(file_url, tab_name, skiprows=rows)
     elif extension == 'pdf':
         # Process PDF files
         # need a library like PyPDF2 or PDFMiner to read PDF files
@@ -254,7 +254,7 @@ if url:
   selected_names = st.multiselect('Select rows:', full_df.Name)
   selected_rows = full_df[full_df['Name'].isin(selected_names)]
   #st.write(selected_rows) # remove later
-  tab_names = read_file(selected_rows['hrefs'])
+  tab_names = print_tab_names(selected_rows['hrefs'])
   selected_sheet = st.selectbox('Select sheet:', tab_names)
   #file_types = group_files(full_df)
   #selected_types = st.multiselect('Select file type:', file_types)
