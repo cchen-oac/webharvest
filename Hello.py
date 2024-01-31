@@ -25,6 +25,7 @@ import requests
 from io import BytesIO
 import re
 from openpyxl import load_workbook
+import os
 
 ##Defining functions
 #Check that the website is allowed for acces
@@ -92,12 +93,33 @@ def group_files(df):
 def get_file_type(file_url):
     return file_url.rsplit('.', 1)[-1] #Extact file suffix to get file types, use regex backward
 
-def read_file(file_url, tab_name, rows):
+@st.cache_data
+def print_tab_names(file_paths):
+    tab_names = []
+    for file_path in file_paths:
+        # Set up the headers to avoid access denied
+        hdr = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (Kpng, like Gecko) Chrome/23.0.1271.64 Safari/537.11',
+        'Accept': 'text/png,application/xpng+xml,application/xml;q=0.9,*/*;q=0.8',
+        'Accept-Charset': 'ISO-8859-1,utf-8;q=0.7,*;q=0.3',
+        'Accept-Encoding': 'none',
+        'Accept-Language': 'en-US,en;q=0.8',
+        'Connection': 'keep-alive'}
+        response = requests.get(file_path,  headers=hdr)
+        assert response.status_code == 200, 'Download failed'
+        file_name = os.path.basename(file_path)
+        with open(file_name, 'wb') as f:
+            f.write(response.content)
+        xls = pd.ExcelFile(file_name)
+        tab_names.extend(xls.sheet_names)
+        os.remove(file_name)  # remove the file after reading it
+    return tab_names
+
+def read_file(file_url):
     extension = get_file_type(file_url)
     if extension == 'csv':
         return pd.read_csv(file_url, low_memory=False)
     elif extension == 'xlsx':
-        return pd.read_excel(file_url, tab_name, skiprows=rows)
+        return print_tab_names(file_url)
     elif extension == 'pdf':
         # Process PDF files
         # need a library like PyPDF2 or PDFMiner to read PDF files
@@ -105,14 +127,6 @@ def read_file(file_url, tab_name, rows):
     else:
         print(f'Unsupported file type: {extension}')
         return None
-
-@st.cache_data
-def print_tab_names(file_paths):
-    tab_names = []
-    for file_path in file_paths:
-        xls = pd.ExcelFile(file_path)
-        tab_names.extend(xls.sheet_names)
-    return tab_names
 
 #Download the selected sheet data
 def get_data(selected_rows, tab_name, rows):
@@ -232,13 +246,15 @@ if url:
   #User has inputted a URL
   st.write(check_acess(url))
   full_df = load_dataset(url)
+  #st.write(full_df) # remove later
   df_names = pd.DataFrame(display_dataset(full_df))
 
 
   # Let the user select from the dataframe indices
   selected_names = st.multiselect('Select rows:', full_df.Name)
   selected_rows = full_df[full_df['Name'].isin(selected_names)]
-  tab_names = print_tab_names(selected_rows['hrefs'])
+  #st.write(selected_rows) # remove later
+  tab_names = read_file(selected_rows['hrefs'])
   selected_sheet = st.selectbox('Select sheet:', tab_names)
   #file_types = group_files(full_df)
   #selected_types = st.multiselect('Select file type:', file_types)
